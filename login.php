@@ -1,3 +1,35 @@
+<?php
+include("conexao.php");
+session_start();
+
+$erro = [];
+
+if (isset($_POST['email']) && strlen($_POST['email']) > 0) {
+  $_SESSION['email'] = $mysql->escape_string($_POST['email']);
+  $_SESSION['senha'] = md5(md5($_POST['senha']));
+  $email = $_SESSION['email'];
+  $sql_code = "SELECT senha, codigo FROM usuario WHERE email = '$email'";
+  $sql_query = $mysql->query($sql_code) or die($mysql->error);
+  $dado = $sql_query->fetch_assoc();
+  $total = $sql_query->num_rows;
+
+  if ($total == 0) {
+    $erro[] = "Este email não pertence a nenhum usuário.";
+  } else {
+    if ($dado['senha'] == $_SESSION['senha']) {
+      $_SESSION['usuario'] = $dado['codigo'];
+    } else {
+      $erro[] = "Senha incorreta";
+    }
+  }
+
+  if (count($erro) == 0) {
+    echo "<script>alert('Login efetuado com sucesso'); location.href='sucesso.php';</script>";
+    exit;
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html class="login" lang="pt-br">
 
@@ -17,6 +49,7 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="utf-8">
 </head>
 
 <body>
@@ -41,10 +74,17 @@
     <!--flex-->
   </div>
 
+  <?php if(count($erro)>0)
+  foreach($erro as $msg){
+    echo "<p>$msg</p>";
+  }
+  
+  ?>
+
   <!--FIM HEADER-->
 
   <!-- PRIMEIRA SECTION -->
-   <div class="container-fluid login2">
+  <!-- <div class="container-fluid login2">
     <div class="col">
       <div class="row">
         <div class="login-box">
@@ -66,7 +106,32 @@
       </div>
     </div>
 
-   </div>
+   </div> -->
+
+<form method="POST" action="">
+  <p>
+    <input 
+      value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>" 
+      name="email" 
+      placeholder="E-mail" 
+      type="email" 
+      required
+    >
+  </p>
+  <p>
+    <input 
+      name="senha" 
+      placeholder="Senha" 
+      type="password" 
+      required
+    >
+  </p>
+  <a href="#">Esqueceu a sua senha?</a>
+  <p>
+    <input value="Entrar" type="submit">
+  </p>
+</form>
+
 
 
 

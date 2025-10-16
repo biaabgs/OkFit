@@ -22,21 +22,49 @@
 <body>
   <!-- HEADER --> 
   <div class="container">
-    <div class="flex">
-     <!-- Botão para abrir o menu -->
-      <div id="menu-toggle" onclick="toggleMenu()"><i class="material-symbols-outlined">menu</i></div>
+      <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="menu-toggle">
+          <i class="material-symbols-outlined">menu</i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Área do aluno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+  </div>
+</nav>
+  </div>
+     
+      <!-- <div id="menu-toggle" onclick="toggleMenu()"><i class="material-symbols-outlined">menu</i></div>
 
       
       <nav id="sidebar">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="./login.html">Área do aluno</a></li>
-          <li><a href="#planos">Planos</a></li>
+          <li><a href="./login.php">Área do aluno</a></li>
+          <li><a href="./planos.html">Planos</a></li>
           <li><a href="./treino1.html">Contato</a></li>
         </ul>
       </nav>
-    </div>
-  </div>
+    </div> -->
 
   <!-- <div class="container-fluid p-0">
   <div class="row-12">
@@ -48,7 +76,6 @@
       </div>
   </div>
 </div> -->
-
   <!--FIM HEADER-->
 
   <!-- PRIMEIRA SECTION -->
@@ -75,53 +102,76 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>      
 
   <!-- ATIVIDADES -->
   <section class="atividades py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2>A ESTRUTURA QUE</h2>
-          <h1><strong>TRANSFORMA SEU TREINO</strong></h1>
-        </div>
-      </div>
-      <div class="row align-items-center curs">
-        <!--Curso-->
-        <!-- Coluna de texto -->
-        <div class="col-md-6 cursostxt">
-          <h2>ZUMBA</h2>
-          <p>
-            Treinos personalizados, equipamentos modernos, aulas online para
-            melhorar seu bem-estar.
-          </p>
-        </div>
-        <!-- Coluna de imagem -->
-        <div class="col-md-6 text-center">
-          <div class="paralelograma">
-            <img src="img/academia_externo.png" alt="Aula de Zumba" />
-          </div>
-        </div>
-        <!--Curso fim-->
-        <!--Curso-->
-        <!-- Coluna de texto -->
-        <div class="col-md-6 cursostxt">
-          <h2>ZUMBA</h2>
-          <p>
-            Treinos personalizados, equipamentos modernos, aulas online para
-            melhorar seu bem-estar.
-          </p>
-        </div>
-        <!-- Coluna de imagem -->
-        <div class="col-md-6 text-center">
-          <div class="paralelograma">
-            <img src="img/academia_externo.png" alt="Aula de Zumba" />
-          </div>
-        </div>
-        <!--Curso fim-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>A ESTRUTURA QUE</h2>
+        <h1><strong>TRANSFORMA SEU TREINO</strong></h1>
       </div>
     </div>
-  </section>
+
+    <!-- Curso Zumba -->
+    <div class="row align-items-center mb-4">
+      <!-- Texto: título + descrição -->
+      <div class="col-md-6">
+        <h2>ZUMBA</h2>
+        <p>Treinos personalizados, equipamentos modernos, aulas online para melhorar seu bem-estar.</p>
+      </div>
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <div class="paralelograma">
+          <img src="img/zumba.png" alt="Aula de Zumba" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Curso Natação -->
+    <div class="row align-items-center mb-4">
+      <!-- Texto: título + descrição -->
+      <div class="col-md-6">
+        <h2>NATAÇÃO</h2>
+        <p>Treinos personalizados, equipamentos modernos, aulas online para melhorar seu bem-estar.</p>
+      </div>
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <div class="paralelograma">
+          <img src="img/natacao.png" alt="Aula de Natação" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mb-4">
+      <!-- Texto: título + descrição -->
+      <div class="col-md-6">
+        <h2>NATAÇÃO</h2>
+        <p>Treinos personalizados, equipamentos modernos, aulas online para melhorar seu bem-estar.</p>
+      </div>
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <div class="paralelograma">
+          <img src="img/natacao.png" alt="Aula de Natação" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center mb-4">
+      <!-- Texto: título + descrição -->
+      <div class="col-md-6">
+        <h2>NATAÇÃO</h2>
+        <p>Treinos personalizados, equipamentos modernos, aulas online para melhorar seu bem-estar.</p>
+      </div>
+      <!-- Imagem -->
+      <div class="col-md-6 text-center">
+        <div class="paralelograma">
+          <img src="img/natacao.png" alt="Aula de Natação" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- PRATICIDADE -->
@@ -357,10 +407,10 @@
   <!-- PLANOS -->
   <section class="planos py-5">
     <div class="container text-center">
-      <div class="row g-4">
+      <div class="row row-cols-sm-3 g-4">
         <!-- Plano Presencial -->
-        <div class="col-md-4 col-sm-12">
-          <div class="card plano-cinza h-100 position-relative">
+        <div class="col-lg-4 col-md-12">
+          <div class="card plano-cinza text-center h-100 w-100 d-flex flex-column position-relative" style="width: 26rem;">
             <div class="plano-icon text-center">
               <i class="material-symbols-outlined">fitness_center</i>
             </div>
@@ -377,18 +427,20 @@
                 <li>Personal trainer</li>
                 <li>Ambiente climatizado</li>
               </ul>
-              <p class="preco">
+              <p class="preco card-text">
                 <span class="valor">R$ <strong>90,00</strong></span>
                 <span class="mensal">mensais</span>
-              </p>             
-              <button type="button" class="btn">Matricule-se</button>
+              </p>                          
             </div>
+              <div class="mb-5">
+                  <button type="button" class="btn">Matricule-se</button>
+              </div>
           </div>
         </div>
 
         <!-- Plano Híbrido -->
-        <div class="col-md-4 col-sm-12">
-          <div class="card plano-azul h-100 position-relative">
+        <div class="col-lg-4 col-md-12">
+          <div class="card plano-azul text-center h-100 w-100 d-flex flex-column position-relative" style="width: 26rem;">
             <div class="plano-icon text-center">
               <i class="material-symbols-outlined">exercise</i>
               <i class="material-symbols-outlined">computer</i>
@@ -406,18 +458,20 @@
                 <li>App exclusivo</li>
                 <li>Suporte via chat</li>
               </ul>
-              <p class="preco">
+              <p class="preco card-text">
                 <span class="valor">R$<strong>110,00</strong></span>
                 <span class="mensal">mensais</span>
-              </p>  
-              <button type="button" class="btn">Matricule-se</button>  
+              </p>                
             </div>
+            <div class="mb-5">
+                <button type="button" class="btn">Matricule-se</button>
+              </div>
           </div>
         </div>
 
         <!-- Plano Online -->
-        <div class="col-md-4 col-sm-12">
-          <div class="card plano-cinza h-100 position-relative">
+        <div class="col-lg-4 col-md-12">
+          <div class="card plano-cinza text-center h-100 w-100 d-flex flex-column position-relative" style="width: 26rem;">
             <div class="plano-icon text-center">
               <i class="material-symbols-outlined">mobile_layout</i>
             </div>
@@ -434,12 +488,14 @@
                 <li>Planos personalizados</li>
                 <li>Acompanhamento remoto</li>
               </ul>
-              <p class="preco">
+              <p class="preco card-text">
                 <span class="valor">R$ <strong>30,00</strong></span>
                 <span class="mensal">mensais</span>
-              </p>
-              <button type="button" class="btn">Matricule-se</button>
+              </p>             
             </div>
+            <div class="mb-5">
+                <button type="button" class="btn">Matricule-se</button>
+              </div>
           </div>
         </div>
   </section>

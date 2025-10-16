@@ -104,21 +104,55 @@ p {
   object-fit: cover;
 }
 
-/* Botão do menu */
+/* MENU */
+.offcanvas{
+  position: fixed;
+  top: 0;
+  right: -250px;
+  /* Escondido inicialmente à direita */
+  width: 250px;
+  height: 100%;
+  background-color: var(--azul-escuro);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  border: none;
+  box-shadow: none;
+}
+
 #menu-toggle {
   position: fixed;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  z-index: 1000;
   color: var(--laranja-escuro);
+  border: none;
 }
 
 #menu-toggle i {
   font-size: 40px;
 }
 
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 /* Menu lateral */
+.navbar-nav li a, .navbar-nav li a .nav-link.active{
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 8px 18px;
+  display: block;
+  transition: background 0.3s;
+}
+
+.nav-item .nav-link.active{
+  color: var(--cinza);
+}
+
 #sidebar {
   position: fixed;
   top: 0;
@@ -128,8 +162,9 @@ p {
   height: 100%;
   background-color: var(--azul-escuro);
   transition: right 0.3s ease;
-  z-index: 999;
   padding-top: 60px;
+  border: none;
+  box-shadow: none;
 }
 
 #sidebar ul {
@@ -219,11 +254,15 @@ section.atividades .row {
   animation-range: entry 0 cover 30%;
 }
 
-.cursostxt h3 {
+.atividadestxt h3 {
   padding-top: 10px;
   font-family: "Inter", sans-serif;
   letter-spacing: 4px;
   font-size: 2rem;
+}
+
+section.atividades .container.atividade{
+  background-color: red;
 }
 
 .paralelograma {
