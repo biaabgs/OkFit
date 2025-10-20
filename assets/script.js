@@ -64,3 +64,11 @@ backButton.onclick = function () {
   backButton.style.display = 'none'; // Esconde o botão "See All"
 };
 
+function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.right === '0px') {
+        sidebar.style.right = '-250px'; // Esconde o menu
+    } else {
+        sidebar.style.right = '0px'; // Mostra o menu
+    }
+}
