@@ -1,6 +1,27 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 3000
+
+const index = require('./middleware/back')
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+
+app.use('/api/info', index)
+app.use('/api/novousuario', novousuario)
+
+/* Informações (pegar) */
+app.get('/', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.get('/novousuario', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'cadastro.html'));
+});
+/* Mandar informação */
+
+
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`)
