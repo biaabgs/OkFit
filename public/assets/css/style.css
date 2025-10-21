@@ -40,18 +40,11 @@ p {
 
 /*HEADER*/
 .banner {
-  width: 100%;
   height: 100vh;
-  align-items: center;
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  background-image: url(../img/home/banner.png);
+  background-image: url('../img/home/banner.png');
   background-size: cover;
-
-  h2{
-    
-  }
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .flex {
@@ -124,9 +117,11 @@ p {
 section.atividades {
   background-color: var(--laranja);
 }
+
 .atividades .row {
   padding: 1vh;
 }
+
 .curso-bloco {
   margin-bottom: 40px;
 }
@@ -182,7 +177,7 @@ section.atividades .row {
   font-size: 2rem;
 }
 
-section.atividades .container.atividade{
+section.atividades .container.atividade {
   background-color: red;
 }
 
@@ -223,51 +218,77 @@ section {
 section.praticidade {
   margin: 10vh;
   background-color: transparent;
+
+  h1 {
+    color: var(--laranja);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    margin-top: -20px;
+  }
+
+  h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--laranja);
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  h3 {
+    color: var(--laranja);
+    font-size: 4rem;
+    font-weight: 100;
+    margin-top: -20px;
+  }
 }
 
 .container.praticidade {
   background-color: var(--azul-escuro);
   border-radius: 10px;
   padding: 20px;
-}
 
-.container.praticidade .row.medias {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  .row.medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 
-.container.praticidade .row.medias img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.5s ease;
-}
-.container.praticidade .row.medias img:hover {
-  transform: scale(1.07);
-}
+    img {
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.5s ease;
+    }
 
-section.praticidade h1 {
-  color: var(--laranja);
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 100;
-  margin-top: -20px;
-}
+    img:hover {
+      transform: scale(1.07);
+    }
+  }
 
-section.praticidade h2 {
-  font-family: "Bebas Neue", sans-serif;
-  color: var(--laranja);
-  font-size: 3rem;
-  font-weight: 100;
-}
+  .card-item {
+    flex: 0 0 auto;
+    aspect-ratio: 1 / 1;
+    width: 40vw;
+    max-width: 350px;
+    /* background-color: aqua; */
+    display: flex;
+    border-radius: 8px;
+    margin-right: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 3px var(--cinza);
+    margin: 0px 10px;
 
-section.praticidade h3 {
-  color: var(--laranja);
-  font-size: 4rem;
-  font-weight: 100;
-  margin-top: -20px;
+    p {
+      font-size: 3vh;
+      color: white;
+    }
+
+    h4 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 5vh;
+      color: white;
+    }
+  }
 }
 
 .scroll-wrapper {
@@ -275,20 +296,6 @@ section.praticidade h3 {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 15px;
-}
-
-.container.praticidade .card-item {
-  flex: 0 0 auto;
-  aspect-ratio: 1 / 1;
-  width: 40vw;
-  max-width: 350px;
-  /* background-color: aqua; */
-  display: flex;
-  border-radius: 8px;
-  margin-right: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 0 3px var(--cinza);
-  margin: 0px 10px;
 }
 
 .quadro {
@@ -301,31 +308,18 @@ section.praticidade h3 {
   align-items: center;
   justify-content: center;
   color: white;
-}
 
-.quadro i {
-  font-size: 5vh;
-}
-
-.container.praticidade .card-item h4 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3vh;
-  color: white;
-}
-
-.container.praticidade .card-item p {
-  font-size: 2vh;
-  color: white;
+  i {
+    font-size: 5vh;
+  }
 }
 
 /* RECOMPENSAS */
 .container.recompensas {
   background: #ff5100;
-  background: radial-gradient(
-    circle,
-    rgba(255, 81, 0, 1) 0%,
-    rgba(254, 127, 45, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 81, 0, 1) 0%,
+      rgba(254, 127, 45, 1) 100%);
   border-radius: 10px;
 }
 
@@ -358,12 +352,13 @@ button.traco {
 .passestxt {
   margin: 2vh;
   margin-top: 3vh;
+
   h2 {
-  font-family: "Bebas Neue", sans-serif;
-  color: white;
-  font-size: 5.5rem;
-  font-weight: 100;
-}
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 5.5rem;
+    font-weight: 100;
+  }
 }
 
 .passestxt p {
@@ -703,13 +698,7 @@ button.traco:hover::after {
   flex-shrink: 0;
 }
 
-.carousel.showDetail
-  .list
-  .item:nth-child(2)
-  .detail
-  .specifications
-  div
-  p:nth-child(1) {
+.carousel.showDetail .list .item:nth-child(2) .detail .specifications div p:nth-child(1) {
   font-weight: bold;
 }
 
@@ -721,11 +710,7 @@ button.traco:hover::after {
   font-weight: 500;
 }
 
-.carousel.carousel.showDetail
-  .list
-  .item:nth-child(2)
-  .checkout
-  button:nth-child(2) {
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2) {
   color: white;
   margin-top: 1.2em;
   padding: 5px 2px;
@@ -826,12 +811,10 @@ button.traco:hover::after {
   height: 500px;
   content: "";
   background: #233d4d;
-  background: linear-gradient(
-    nulldeg,
-    rgba(35, 61, 77, 0.71) 49%,
-    rgba(255, 81, 0, 0.81) 85%,
-    rgba(255, 81, 0, 0.53) 100%
-  );
+  background: linear-gradient(nulldeg,
+      rgba(35, 61, 77, 0.71) 49%,
+      rgba(255, 81, 0, 0.81) 85%,
+      rgba(255, 81, 0, 0.53) 100%);
   /* gradiente original */
   background-blend-mode: overlay;
   /* mistura os gradientes */
@@ -852,6 +835,7 @@ button.traco:hover::after {
 }
 
 @media screen and (max-width: 991px) {
+
   /* ipad, tablets */
   .carousel .list .item {
     width: 90%;
@@ -867,6 +851,7 @@ button.traco:hover::after {
 }
 
 @media screen and (max-width: 767px) {
+
   /* mobile */
   .carousel {
     height: 600px;
@@ -1066,6 +1051,7 @@ button.traco:hover::after {
   list-style: none;
   padding: 0;
 }
+
 .tag {
   padding: 10px 20px;
   margin: 1vh;
@@ -1091,6 +1077,7 @@ button.traco:hover::after {
 .login {
   background-color: var(--azul-escuroo);
 }
+
 .login2 {
   min-height: 950px;
   display: flex;
@@ -1152,9 +1139,11 @@ label {
   font-size: 0.9em;
   color: white;
 }
+
 .form-label {
   color: white;
 }
+
 .perguntaslogin {
   padding-bottom: 8vh;
 }
@@ -1165,7 +1154,7 @@ label {
   padding-top: 4vh;
   padding-bottom: 4vh;
 
-  .row{
+  .row {
     margin: 2vh;
   }
 }
@@ -1189,3 +1178,85 @@ footer img {
   display: flex;
   justify-content: center;
 }
+
+/* BANNER */
+section#catalogo_ini {
+  display: flex;
+}
+.catalogo_banner {
+  /* background-image: url(../img/home/banner.png);
+  background-size: cover;
+  background-position: center; */
+  background-color: red;
+  height: 45vh;
+  overflow-x: hidden;
+  border-radius: 1.5rem;
+}
+
+/* #catalogo_home {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.catalogo_banner {
+    margin-top: 15vh;
+    background-color: var(--azul-escuro);
+    background-image: url(../img/home/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    border-radius: 1.5rem;
+    width: 80%;
+    height: 45vh;
+    overflow-y: hidden;
+}
+
+.produtos {
+    margin-top: 23vh;
+    z-index: 1;
+    left: 13%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 80vh;
+
+    h1 {
+        font-family: var(--cinzel_fonte);
+        color: var(--branco);
+        font-weight: 650;
+        width: 50vh;
+        text-align: center;
+    }
+
+    p {
+        font-family: var(--montserrat_fonte);
+        color: rebeccapurple;
+        text-align: center;
+    }
+
+    button {
+        font-family: var(--montserrat_fonte);
+        font-weight: 700;
+        color: var(--marrom);
+        border: transparent;
+        background-color: white;
+        width: 23vh;
+        height: 6vh;
+        border-radius: 0.4rem;
+    }
+}
+
+.produtos button:hover {
+    background-color: var(--marrom);
+    color: var(--amarelo_apagado);
+    transition: 1s;
+} */
