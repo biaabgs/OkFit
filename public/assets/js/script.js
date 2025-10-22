@@ -7,7 +7,10 @@ let seeMoreButtons = document.querySelectorAll('.seeMore');
 let backButton = document.getElementById('back');
 
 // Inicialmente esconde o botão "See All"
-backButton.style.display = 'none';
+if (location.pathname === './public/index.html') {
+  const backButton = document.getElementById('backButton');
+  if (backButton) backButton.style.display = 'none';
+}
 
 // Controle de clique para evitar múltiplos cliques rápidos
 let unAcceppClick;

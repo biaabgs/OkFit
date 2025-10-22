@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.use('/api/info', index)
 app.use('/api/novousuario', novousuario)
+app.use('/api/registrar', registrarRoute);
 
 /* Informações (pegar) */
 app.get('/', (req, res)=>{

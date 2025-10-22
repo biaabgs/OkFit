@@ -1080,6 +1080,7 @@ button.traco:hover::after {
 
 .login2 {
   min-height: 950px;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1087,6 +1088,11 @@ button.traco:hover::after {
 }
 
 .login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5vh;
+  align-items: center;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -1098,6 +1104,12 @@ button.traco:hover::after {
   margin: 100px auto;
   box-shadow: 2px 0px 14px -7px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
+}
+input{
+  border-radius: 10px;
+  height: 4vh;
+  width: auto;
+  padding: 3px;
 }
 
 .login-title {
