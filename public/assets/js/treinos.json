@@ -1,0 +1,22 @@
+{
+    "treinos": [
+      {
+        "id": 1,
+        "titulo": "Aquecimento",
+        "descricao": "5-10 minutos de caminhada rápida ou bicicleta ergométrica",
+        "dica": "Dica: prepare o corpo antes do treino"
+      },
+      {
+        "id": 2,
+        "titulo": "Agachamento Livre",
+        "descricao": "4 séries de 8-12 repetições<br>Descanso: 60-90 segundos",
+        "dica": "Dica: mantenha a core firme"
+      },
+      {
+        "id": 3,
+        "titulo": "Levantamento Terra Romeno",
+        "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
+        "dica": "Dica: mantenha as costas retas"
+      }
+    ]
+  }

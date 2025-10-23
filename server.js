@@ -4,12 +4,12 @@ const app = express()
 const port = 3000
 
 const index = require('./middleware/back')
+const registrarRoute = require('./middleware/registrarUser')
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 app.use('/api/info', index)
-app.use('/api/novousuario', novousuario)
 app.use('/api/registrar', registrarRoute);
 
 /* Informações (pegar) */
