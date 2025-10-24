@@ -12,7 +12,7 @@ function loginAuto(){
 }
 
 function registrarNovoUsuario() {
-	// Criação de constantes de input e radio
+	
 	const nome = document.getElementById('nomeNewUser').value;
 	const email = document.getElementById('emailNewUser').value;
 	const passwd = document.getElementById('passwdNewUser').value;
@@ -22,10 +22,10 @@ function registrarNovoUsuario() {
 	const online = document.getElementById('online').checked;
 	const presencial = document.getElementById('presencial').checked
 
-	// radio de tipo da conta inativo, esperando ser selecionado
+	
 	let plano = false;
     
-	// Verificador de condição para o tipo da conta
+	
 
 
 
@@ -39,13 +39,13 @@ function registrarNovoUsuario() {
 		plano = 'presencial'
 	}
 
-	// Tratamento de erro caso nada seja inserido
+	
 	if (!nome || !email || !telefone || !passwd || !datanasc) {
 		alert('Por favor preencha todos os campos!');
 		return;
 	};
 
-	// Verifica regras de senha
+	
 	const senhaForte = /^(?=(?:.*\d){8,})(?=.*[\W_]).+$/;
 
 	if (!senhaForte.test(passwd)) {
@@ -53,29 +53,29 @@ function registrarNovoUsuario() {
 		return;
 	}
 
-	// 'fetch' é uma forma de fazer 'curl' direto no código
+	
 	fetch('/api/registrar', {
-		// Parametros que seriam inseridos no 'curl' já são inseridos aqui
+		
 		method: 'POST', // -X POST
 		headers: { // -H "Content-type: application/json"
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({ nome, email, telefone, passwd, datanasc, plano }) // -d (Aqui é pego os dados inseridos nos inputs e transformados em um body para requisição)
 	})
-	// .then(res => res.json())
-	.then(async res => {
-    const text = await res.text();
-    try {
-        return JSON.parse(text);
-    } catch {
-        throw new Error('Resposta inválida do servidor');
-    }
-})
+	.then(res => res.json())
+// 	.then(async res => {
+//     const text = await res.text();
+//     try {
+//         return JSON.parse(text);
+//     } catch {
+//         throw new Error('Resposta inválida do servidor');
+//     }
+// })
 
 	
 	.then(data => {
 
-		// Constante para pegar valor informado no Modal do Bootstrap
+		
 		const modal = bootstrap.Modal.getInstance(
                 document.getElementById('exampleModal')
             );
@@ -92,12 +92,12 @@ function registrarNovoUsuario() {
 		if (data.success) {
 			alert('Usuário registrado com sucesso!');
 		} 
-		//Tratamento de erro em registrar o usuário
+		
 		else {
 			alert('Erro ao registrar usuário: ' + (data.error || 'erro desconhecido'));
 		}
 	})
-	// Tratamento de erro
+	
 	.catch(err => {
 		console.error(err);
 		alert('Erro de comunicação com o servidor');
@@ -106,17 +106,17 @@ function registrarNovoUsuario() {
 
 // Fazer login
 function fazerLogin() {
-	// Constantes de inputs do Login de usuário
+	
 	const email = document.getElementById('email').value;
 	const passwd = document.getElementById('passwd').value;
 	
-	// Verifica se foi inserido dados
+	
 	if (!email || !passwd) {
 		alert('Preencha todos os campos!');
 		return;
 	};
 
-	// fetch de conteudos para o login
+	
 	fetch('/api/login', {
 		method: 'POST',
 		headers: {
@@ -124,9 +124,9 @@ function fazerLogin() {
 		},
 		body: JSON.stringify({email, passwd})
 	})
-	// .then(res => res.json())
-	.then(async res => {
-    const text = await res.text();
+	.then(res => res.json())
+	// .then(async res => {
+    // const text = await res.text();
     try {
         const data = JSON.parse(text);
         
@@ -148,26 +148,26 @@ function fazerLogin() {
 
 	.then(data =>{
 		if(data.success){
-			// Constante que recebe o userID do user.json
+			
 			const userID = data.usuario.userID;
 
-			// Aqui é armazenado "variáveis" com valores para serem vistos no JSON
+			
 			localStorage.setItem('userID', userID);
 			localStorage.setItem('userEmail', data.usuario.email);
 			localStorage.setItem('userTipo', data.usuario.plano);//???
 
-			// Redireciona o usuário logado para página dele
+			
 			window.location.href = `/perfil/${userID}`;
 			alert('Usuario logado com sucesso!');
 
 		} 
 		
-		// Tratamento de erros ao logar
+		
 		else {
 			alert('Erro ao logar o usuário: ' + (data.error || 'erro desconhecido'));
 		}
 	})
-	// Tratamento de erros
+	
 	.catch(error =>{
 		console.error(error);
         alert('Erro ao carregar perfil');
