@@ -1,22 +1,81 @@
 {
-    "treinos": [
-      {
-        "id": 1,
-        "titulo": "Aquecimento",
-        "descricao": "5-10 minutos de caminhada rápida ou bicicleta ergométrica",
-        "dica": "Dica: prepare o corpo antes do treino"
-      },
-      {
-        "id": 2,
-        "titulo": "Agachamento Livre",
-        "descricao": "4 séries de 8-12 repetições<br>Descanso: 60-90 segundos",
-        "dica": "Dica: mantenha a core firme"
-      },
-      {
-        "id": 3,
-        "titulo": "Levantamento Terra Romeno",
-        "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
-        "dica": "Dica: mantenha as costas retas"
-      }
-    ]
-  }
+  "treinos": [
+    {
+      "id": 1,
+      "titulo": "Glúteos",
+      "nomeurl": "gluteos",
+      "descricao": "Treino completo para desenvolvimento dos glúteos",
+      "imagem": "assets/img/home/academia/academiasbc.png",
+      "exercicios": [
+        {
+          "nome": "Aquecimento",
+          "descricao": "5-10 minutos de caminhada rápida ou bicicleta ergométrica",
+          "dica": "Prepare o corpo antes do treino"
+        },
+        {
+          "nome": "Agachamento Livre",
+          "descricao": "4 séries de 8-12 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha a core firme"
+        },
+        {
+          "nome": "Levantamento Terra Romeno",
+          "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha as costas retas"
+        },
+        {
+          "nome": "Elevacao Pelvica",
+          "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha as costas retas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Peito e Tríceps",
+      "nomeurl": "peito-triceps",
+      "descricao": "Treino focado em peitoral e tríceps",
+      "imagem": "assets/img/home/academia/academiasa.png",
+      "exercicios": [
+        {
+          "nome": "Aquecimento",
+          "descricao": "5 minutos de polichinelo ou pular corda",
+          "dica": "Aqueça bem os ombros"
+        },
+        {
+          "nome": "Supino Reto",
+          "descricao": "4 séries de 10-12 repetições<br>Descanso: 90 segundos",
+          "dica": "Mantenha os pés firmes no chão"
+        },
+        {
+          "nome": "Tríceps Testa",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 60 segundos",
+          "dica": "Cotovelos sempre para cima"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Costas e Bíceps",
+      "nomeurl": "costas-biceps",
+      "descricao": "Treino para desenvolvimento das costas e bíceps",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Aquecimento",
+          "descricao": "5 minutos de remada leve",
+          "dica": "Prepare a região lombar"
+        },
+        {
+          "nome": "Barra Fixa",
+          "descricao": "4 séries até a falha<br>Descanso: 90-120 segundos",
+          "dica": "Use auxílio se necessário"
+        },
+        {
+          "nome": "Rosca Direta",
+          "descricao": "3 séries de 10-12 repetições<br>Descanso: 60 segundos",
+          "dica": "Evite balançar o corpo"
+        }
+      ]
+    }
+  ]
+}
