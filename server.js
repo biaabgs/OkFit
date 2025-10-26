@@ -9,7 +9,8 @@ const registrarRoute = require('./middleware/registrarUser')
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-app.use('/api/info', index)
+app.use('/api/info', index);
+app.use('/api/treinos', treinos);
 app.use('/api/registrar', registrarRoute);
 
 /* Informações (pegar) */
@@ -18,7 +19,11 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/novousuario', (req, res)=>{
-	res.status(200).sendFile(path.join(__dirname, 'public', 'cadastro.html'));
+	res.status(200).sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+app.get('/treinos', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'treinos.html'));
 });
 /* Mandar informação */
 

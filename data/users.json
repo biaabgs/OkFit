@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "userID": "1761447835765",
+    "nome": "Guguinha",
+    "email": "guguinha@gmail.com",
+    "telefone": "11155544478",
+    "passwd": "Soap",
+    "plano": "hibrido",
+    "datanasc": "2008-01-01"
+  }
+]

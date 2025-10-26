@@ -1,15 +1,4 @@
 
-window.onload = async function () {
-    await loginAuto();
-};
-
-function loginAuto(){
-	const userID = localStorage.getItem('userID');
-
-	if (userID){
-		location.href = "/home"
-	}
-}
 
 function registrarNovoUsuario() {
 	
@@ -46,12 +35,7 @@ function registrarNovoUsuario() {
 	};
 
 	
-	const senhaForte = /^(?=(?:.*\d){8,})(?=.*[\W_]).+$/;
-
-	if (!senhaForte.test(passwd)) {
-		alert('[Senha fraca] Sua senha precisa ter pelo menos 8 caracteres, incluindo letras maiúsculas, minúsculas, números e caracteres especiais.');
-		return;
-	}
+	
 
 	
 	fetch('/api/registrar', {
@@ -108,10 +92,10 @@ function registrarNovoUsuario() {
 function fazerLogin() {
 	
 	const email = document.getElementById('email').value;
-	const passwd = document.getElementById('passwd').value;
+	const senha = document.getElementById('senha').value;
 	
 	
-	if (!email || !passwd) {
+	if (!email || !senha) {
 		alert('Preencha todos os campos!');
 		return;
 	};
@@ -122,30 +106,30 @@ function fazerLogin() {
 		headers: {
 			'Content-Type': 'application/json'
 		},
-		body: JSON.stringify({email, passwd})
+		body: JSON.stringify({email, senha})
 	})
 	.then(res => res.json())
+	//CODIGO REMOVIDO
+// 	    try {
+//         const data = JSON.parse(text);
+        
+//         if (data.success) {
+//             const userID = data.usuario.userID;
+//             localStorage.setItem('userID', userID);
+//             localStorage.setItem('userEmail', data.usuario.email);
+//             localStorage.setItem('userTipo', data.usuario.plano);
+//             window.location.href = `/perfil/${userID}`;
+//             alert('Usuário logado com sucesso!');
+//         } else {
+//             alert('Erro ao logar o usuário: ' + (data.error || 'erro desconhecido'));
+//         }
+//     } catch (err) {
+//         console.error('Resposta não é JSON:', text);
+//         alert('Erro inesperado na resposta do servidor');
+//     }
+// })
 	// .then(async res => {
     // const text = await res.text();
-    try {
-        const data = JSON.parse(text);
-        
-        if (data.success) {
-            const userID = data.usuario.userID;
-            localStorage.setItem('userID', userID);
-            localStorage.setItem('userEmail', data.usuario.email);
-            localStorage.setItem('userTipo', data.usuario.plano);
-            window.location.href = `/perfil/${userID}`;
-            alert('Usuário logado com sucesso!');
-        } else {
-            alert('Erro ao logar o usuário: ' + (data.error || 'erro desconhecido'));
-        }
-    } catch (err) {
-        console.error('Resposta não é JSON:', text);
-        alert('Erro inesperado na resposta do servidor');
-    }
-})
-
 	.then(data =>{
 		if(data.success){
 			

@@ -1,0 +1,9 @@
+[
+    {
+        "ID" : 1,
+        "nome" : "Treino Costas",
+        "exercicios": [3, 7, 12],
+        "descricao" : "",
+        "partesCorpo": ""
+    }
+]
