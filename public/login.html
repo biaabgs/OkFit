@@ -34,9 +34,7 @@
       <nav id="sidebar">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/login">Área do aluno</a></li>
           <li><a href="/sobrenos">Sobre Nós</a></li>
-          <li><a href="/sobrenos">S</a></li>
           <li><a href="./treino1.html">Contato</a></li>
         </ul>
       </nav>
@@ -44,156 +42,147 @@
     <!--flex-->
   </div>
   <!--FIM HEADER-->
-<!-- Login container -->
-<div class="container-fluid login">
-  <div class="row login2">
-    <div class="col">
-      <div class="login-box">
-        <h1 class="login-title">Login</h1>
-
-        <div class="mb-3">
-          <label for="email" class="form-label visually-hidden">E-mail</label>
-          <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
-        </div>
-
-        <div class="mb-3">
-          <label for="senha" class="form-label visually-hidden">Senha</label>
-          <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
-        </div>
-
-        <!-- <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a>
-          <a class="enter-btn" onclick="fazerLogin()">
-            <div class="login-block-enter btn btn-primary">Entrar</div>
-          </a> 
-          <div class="d-flex justify-content-between align-items-center">
-            <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-          </div> -->
+  <!-- Login container -->
+  <div class="container-fluid login">
+    <div class="row">
+      <div class="col">
+        <div class="login-box text-center">
+          <h1 class="login-title">Login</h1>
 
           <div class="mb-3">
-          <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a> -->
-          <a class="enter-btn" onclick="fazerLogin()">
-          <button type="submit" class="btn btn-primary" onclick="fazerLogin()">Entrar</button>
+            <label for="email" class="form-label visually-hidden">E-mail</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+          </div>
+
+          <div class="mb-3">
+            <label for="senha" class="form-label visually-hidden">Senha</label>
+            <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+          </div>
+          <div class="mb-3">
+            <a class="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta?</a>
+            <a class="enter-btn" onclick="fazerLogin()">
+              <button type="submit" class="btn btn-primary" onclick="fazerLogin()">Entrar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  </div>
 
-<!-- Second trigger for the same modal -->
-<a class="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal">Primeira vez aqui?</a>
+  <!-- Second trigger for the same modal -->
+  <a class="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
 
-<!-- Registration modal with consistent id and radio group name -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="registerModalLabel">Torne-se cliente Okfit</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-
-      <div class="modal-body">
-        <div class="register-modal">
-          <h3>Insira seus dados</h3>
-
-          <div class="mb-2">
-            <label for="nomeNewUser" class="form-label visually-hidden">Nome completo</label>
-            <input type="text" class="form-control" name="nome" id="nomeNewUser" placeholder="Nome completo">
-          </div>
-
-          <div class="mb-2">
-            <label for="emailNewUser" class="form-label visually-hidden">E-mail</label>
-            <input type="email" class="form-control" name="email" id="emailNewUser" placeholder="E-mail">
-          </div>
-
-          <div class="mb-2">
-            <label for="telefoneNewUser" class="form-label visually-hidden">Telefone</label>
-            <input type="tel" class="form-control" name="telefone" id="telefoneNewUser" placeholder="Telefone">
-          </div>
-
-          <div class="mb-2">
-            <label for="datanascNewUser" class="form-label visually-hidden">Data de Nascimento</label>
-            <input type="date" class="form-control" name="datanasc" id="datanascNewUser" placeholder="Data de Nascimento">
-          </div>
-
-          <div class="mb-3">
-            <label for="passwdNewUser" class="form-label visually-hidden">Senha</label>
-            <input type="password" class="form-control" name="passwd" id="passwdNewUser" placeholder="Senha">
-          </div>
+  <!-- Registration modal with consistent id and radio group name -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="registerModalLabel">Torne-se cliente Okfit</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
 
-        <h3>Qual é o Plano deseja?</h3>
-        <div class="selection-modal mb-3" role="radiogroup" aria-labelledby="plan-label">
-          <p id="plan-label" class="visually-hidden">Escolha o plano</p>
+        <div class="modal-body">
+          <div class="register-modal">
+            <h3>Insira seus dados</h3>
 
-           <div class="selection-modal">
+            <div class="mb-2">
+              <label for="nomeNewUser" class="form-label visually-hidden">Nome completo</label>
+              <input type="text" class="form-control" name="nome" id="nomeNewUser" placeholder="Nome completo">
+            </div>
+
+            <div class="mb-2">
+              <label for="emailNewUser" class="form-label visually-hidden">E-mail</label>
+              <input type="email" class="form-control" name="email" id="emailNewUser" placeholder="E-mail">
+            </div>
+
+            <div class="mb-2">
+              <label for="telefoneNewUser" class="form-label visually-hidden">Telefone</label>
+              <input type="tel" class="form-control" name="telefone" id="telefoneNewUser" placeholder="Telefone">
+            </div>
+
+            <div class="mb-2">
+              <label for="datanascNewUser" class="form-label visually-hidden">Data de Nascimento</label>
+              <input type="date" class="form-control" name="datanasc" id="datanascNewUser"
+                placeholder="Data de Nascimento">
+            </div>
+
+            <div class="mb-3">
+              <label for="passwdNewUser" class="form-label visually-hidden">Senha</label>
+              <input type="password" class="form-control" name="passwd" id="passwdNewUser" placeholder="Senha">
+            </div>
+          </div>
+
+          <h3>Qual é o Plano deseja?</h3>
+          <div class="selection-modal mb-3" role="radiogroup" aria-labelledby="plan-label">
+            <p id="plan-label" class="visually-hidden">Escolha o plano</p>
+
             <div class="selection-modal">
-                    <div class="select-radio">
-                      <input class="radio-modal" type="radio" name="option" id="presencial">
-                    <label for="presencial">Presencial</label>
-                </div>
-                    <div class="select-radio">
-                      <input class="radio-modal" type="radio" name="option" id="hibrido">
-                    <label for="hibrido">Hibrido</label>
+              <div class="selection-modal">
+                <div class="select-radio">
+                  <input class="radio-modal" type="radio" name="option" id="presencial">
+                  <label for="presencial">Presencial</label>
                 </div>
                 <div class="select-radio">
-                      <input class="radio-modal" type="radio" name="option" id="online">
-                    <label for="online">Online</label>
+                  <input class="radio-modal" type="radio" name="option" id="hibrido">
+                  <label for="hibrido">Hibrido</label>
                 </div>
-           </div>                                         
+                <div class="select-radio">
+                  <input class="radio-modal" type="radio" name="option" id="online">
+                  <label for="online">Online</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="login-block-enter btn btn-warning"
+              onclick="registrarNovoUsuario()">Registrar</button>
+          </div>
         </div>
       </div>
-
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        <button type="button" class="login-block-enter btn btn-warning" onclick="registrarNovoUsuario()">Registrar</button>
     </div>
-  </div>
-</div>
-</div>
 
 
-<!--FOOTER-->
-  <div class="container-fluid">
-    <div class="col">
-      <div class="row">
-        <footer class="py-3 my-0 text-white">
-          <div class="justify-content-center, logofooter"><img src="./assets/img/logo.png" alt="logo do footer">
-          </div>
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Gallery</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
-          </ul>
-          <div class="d-flex justify-content-between align-items-center px-3">
-            <div>
-              <p class="mb-0">© 2025 Company, Inc</p>
+    <!--FOOTER-->
+    <div class="container-fluid">
+      <div class="col">
+        <div class="row">
+          <footer class="py-3 my-0 text-white">
+            <div class="justify-content-center, logofooter"><img src="./assets/img/logo.png" alt="logo do footer">
             </div>
-            <div>
-              <a href="https://www.instagram.com/" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
-              <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory"
-                class="text-white me-3"><i class="fa-brands fa-tiktok"></i></i></a>
-              <a href="https://br.linkedin.com/" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Gallery</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center px-3">
+              <div>
+                <p class="mb-0">© 2025 Company, Inc</p>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory"
+                  class="text-white me-3"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="https://br.linkedin.com/" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
     </div>
-  </div>
 
 
 
 
-<script async src="assets/js/login.js"></script>
-<script src="assets/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  
+    <script async src="assets/js/login.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+
 </body>
 
 </html>

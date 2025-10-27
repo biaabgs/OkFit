@@ -16,5 +16,14 @@
     "passwd": "1234578!",
     "plano": "presencial",
     "datanasc": "2008-12-09"
+  },
+  {
+    "userID": "1761593058949",
+    "nome": "Bia",
+    "email": "goncalvesdasilvabia@gmail.com",
+    "telefone": "11987654321",
+    "passwd": "@Aluno06",
+    "plano": "presencial",
+    "datanasc": "2000-01-06"
   }
 ]

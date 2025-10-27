@@ -5,7 +5,7 @@
       "titulo": "Glúteos",
       "nomeurl": "gluteos",
       "descricao": "Treino completo para desenvolvimento dos glúteos",
-      "imagem": "assets/img/treinos/peitotriceps.png",
+      "imagem": "assets/img/treinos/gluteos.png",
       "exercicios": [
         {
           "nome": "Agachamento Livre",
@@ -44,7 +44,7 @@
       "titulo": "Peito e Tríceps",
       "nomeurl": "peito-triceps",
       "descricao": "Treino focado em peitoral e tríceps",
-      "imagem": "assets/img/home/academia/academiascs.png",
+      "imagem": "assets/img/treinos/peitoetriceps.png",
       "exercicios": [
         {
           "nome": "Supino Reto",
@@ -83,7 +83,7 @@
       "titulo": "Costas e Bíceps",
       "nomeurl": "costas-biceps",
       "descricao": "Treino para desenvolvimento das costas e bíceps",
-      "imagem": "assets/img/home/academia/academiascs.png",
+      "imagem": "assets/img/treinos/costasebiceps.png",
       "exercicios": [
         {
           "nome": "Puxada Frontal na Barra",
@@ -122,7 +122,7 @@
       "titulo": "Posterior e Panturrilhas",
       "nomeurl": "posterior-panturrilhas",
       "descricao": "Treino focado em posteriores de coxa e panturrilhas",
-      "imagem": "assets/img/home/academia/academiascs.png",
+      "imagem": "assets/img/treinos/posteriorepanturrilha.png",
       "exercicios": [
         {
           "nome": "Mesa Flexora",
@@ -161,7 +161,7 @@
       "titulo": "Ombros e Trapézio",
       "nomeurl": "ombros-trapezio",
       "descricao": "Treino para fortalecimento dos ombros e trapézio",
-      "imagem": "assets/img/home/academia/academiascs.png",
+      "imagem": "assets/img/treinos/ombrosetrapezio.png",
       "exercicios": [
         {
           "nome": "Desenvolvimento com Halteres",
@@ -200,7 +200,7 @@
       "titulo": "Core e Funcional",
       "nomeurl": "core-funcional",
       "descricao": "Treino para fortalecimento do core e condicionamento geral",
-      "imagem": "assets/img/home/academia/academiascs.png",
+      "imagem": "assets/img/treinos/coreefuncional.png",
       "exercicios": [
         {
           "nome": "Prancha Isométrica",

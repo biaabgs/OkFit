@@ -7,15 +7,14 @@ const port = 3000
 const login = require('./middleware/loginUser')
 const registrarRoute = require('./middleware/registrarUser')
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 // app.use('/api/info', index);
 app.use('/api/login', login);
 app.use('/api/registrar', registrarRoute);
-app.use('/api/catalogo', catalogo);
-app.use('/api/sobrenos', sobrenos);
-app.use('/api/planos', planos);
+
 
 /* Informações (pegar) */
 app.get('/', (req, res)=>{
@@ -30,7 +29,7 @@ app.get('/sobrenos', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'sobrenos.html'));
 });
 
-app.get('/novousuario', (req, res)=>{
+app.get('/login', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
@@ -45,7 +44,6 @@ app.get('/treino', (req, res)=>{
 app.get('/catalogo', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'catalogo.html'))
 })
-
 
 
 app.listen(port, () => {
