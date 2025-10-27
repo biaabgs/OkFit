@@ -1219,96 +1219,6 @@ section.unidades {
     color: #333;
     font-weight: bold;
   }
-
-  /* section.login{
-  display: flex;
-  justify-content: center;
-}
-
-.login {
-  background-color: var(--azul-escuroo);
-}
-
-.login2 {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-box {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 40px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  text-align: center;
-}
-
-.login-title {
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.input-custom {
-  border-radius: 10px;
-  height: 45px;
-  padding: 10px;
-  background-color: white;
-}
-
-.login-btn {
-  background-color: var(--laranja);
-  color: white;
-  font-weight: bold;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.login-btn:hover {
-  background-color: #e56f00;
-}
-
-
-.btn-orange {
-  background-color: #ff6f00;
-  border: none;
-  color: white;
-  font-weight: bold;
-  width: 100%;
-}
-
-.btn-orange:hover {
-  background-color: #e65100;
-}
-
-.link-text {
-  display: block;
-  text-align: right;
-  margin-top: 10px;
-  color: white;
-  text-decoration: underline;
-}
-
-.form-text {
-  font-size: 0.9em;
-  color: white;
-}
-
-.form-label {
-  color: white;
-}
-
-.perguntaslogin {
-  padding-bottom: 8vh;
-}
- */
 }
 
 /* BANNER */
@@ -1327,198 +1237,32 @@ section#catalogo_ini {
     min-height: 350px;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-  }
-
-  .card {
-    background: linear-gradient(145deg, #e8e8e8, #f5f5f5);
-    border-radius: 20px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .card{
+    height: 38vh;
+    width: 30vh;
     position: relative;
-  }
-
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-  }
-
-  .cart-icon {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 32px;
-    height: 32px;
-    background: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border: 2px solid var(--cinza);
+    margin-top: 1vh;
+    margin-left: 1vh;
   }
 
-  .cart-icon svg {
-    width: 20px;
-    height: 20px;
-    stroke: #333;
-    stroke-width: 2;
-    fill: none;
+  .card img{
+    width: 60%;
   }
 
-  .logo-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin: 10px 0;
-  }
-
-  .logo-text {
-    font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
-    letter-spacing: 2px;
-    margin: 5px 0;
-  }
-
-  .price {
-    font-size: 28px;
-    font-weight: 600;
-    color: #c9933e;
-    margin: 10px 0;
-  }
-
-  .button {
-    background: white;
-    border: 2px solid #c9933e;
-    color: #1a1a1a;
-    padding: 10px 30px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 5px;
-  }
-
-  .button:hover {
-    background: #c9933e;
+  .btn {
+    background-color: var(--laranja);
     color: white;
-    transform: scale(1.05);
-  }
-
-  .button-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.3;
-  }
-
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
-
-    .card {
-      padding: 20px 15px;
-    }
-
-    .logo-text {
-      font-size: 28px;
-    }
-
-    .price {
-      font-size: 22px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* #catalogo_home {
-    height: 60vh;
+    border: none;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
-    align-content: center;
-
-}
-
-.catalogo_banner {
-    margin-top: 15vh;
-    background-color: var(--azul-escuro);
-    background-image: url(../img/home/banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    border-radius: 1.5rem;
-    width: 80%;
-    height: 45vh;
-    overflow-y: hidden;
-}
-
-.produtos {
-    margin-top: 23vh;
-    z-index: 1;
-    left: 13%;
-    transform: translateY(-50%);
-    padding: 1rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-right: 80vh;
-
-    h1 {
-        font-family: var(--cinzel_fonte);
-        color: var(--branco);
-        font-weight: 650;
-        width: 50vh;
-        text-align: center;
-    }
-
-    p {
-        font-family: var(--montserrat_fonte);
-        color: rebeccapurple;
-        text-align: center;
-    }
-
-    button {
-        font-family: var(--montserrat_fonte);
-        font-weight: 700;
-        color: var(--marrom);
-        border: transparent;
-        background-color: white;
-        width: 23vh;
-        height: 6vh;
-        border-radius: 0.4rem;
-    }
-}
-
-.produtos button:hover {
-    background-color: var(--marrom);
-    color: var(--amarelo_apagado);
-    transition: 1s;
-} */
+  }
 }
 
 /* TREINO */
@@ -1532,30 +1276,6 @@ section#catalogo_ini {
     padding: 20px 0;
     margin-bottom: 30px;
   }
-
-  /* .main-title {
-    color: #2c3e50;
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-  } */
-
-  /* .btn-add {
-    background-color: #ff8c42;
-    color: white;
-    border: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: background-color 0.3s;
-  }
-
-  .btn-add:hover {
-    background-color: #e67a32;
-    color: white;
-  }
- */
 
   /* TO DO LIST */
   .task-card {
@@ -1638,7 +1358,7 @@ section#catalogo_ini {
 
     .card-treino {
       display: flex;
-      background: #2a2a2a;
+  
       border-radius: 12px;
       overflow: hidden;
       width: 100%;
@@ -1678,20 +1398,22 @@ section#catalogo_ini {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: red;
+      background: transparent;
+    }
+
+    .col-md-6{
+      margin-top: 2vh;
     }
 
     .card-titulo {
-      font-size: 24px;
+      font-size: 2rem;
       font-weight: 600;
-      color: #ffffff;
       margin-bottom: 12px;
+      letter-spacing: 2px;
     }
 
     .card-text {
-      font-size: 15px;
       line-height: 1.6;
-      color: #b8b8b8;
       margin-bottom: 20px;
     }
 
