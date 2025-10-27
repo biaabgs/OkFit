@@ -33,16 +33,17 @@
       <!-- Menu lateral -->
       <nav id="sidebar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="./login/login.html">Área do aluno</a></li>
-          <li><a href="#planos">Planos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login">Área do aluno</a></li>
+          <li><a href="/sobrenos">Sobre Nós</a></li>
+          <li><a href="/sobrenos">S</a></li>
+          <li><a href="./treino1.html">Contato</a></li>
         </ul>
       </nav>
     </div>
     <!--flex-->
   </div>
-
+  <!--FIM HEADER-->
 <!-- Login container -->
 <div class="container-fluid login">
   <div class="row login2">
@@ -60,11 +61,21 @@
           <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
         </div>
 
-        <div class="d-flex justify-content-between align-items-center">
+        <!-- <div class="d-flex justify-content-between align-items-center">
           <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a>
-          <a class="enter-btn" onclick="fazerlogin()">
+          <a class="enter-btn" onclick="fazerLogin()">
             <div class="login-block-enter btn btn-primary">Entrar</div>
-          </a>
+          </a> 
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </div> -->
+
+          <div class="mb-3">
+          <a class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta? Registre-se</a> -->
+          <a class="enter-btn" onclick="fazerLogin()">
+          <button type="submit" class="btn btn-primary" onclick="fazerLogin()">Entrar</button>
+          </div>
         </div>
       </div>
     </div>

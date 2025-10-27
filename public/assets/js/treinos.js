@@ -15,7 +15,7 @@ function deleteTask(button) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/js/treinos.json")
+  fetch("assets/js/data/treinos.json")
     .then(res => res.json())
     .then(data => {
       data.treinos.forEach(treino => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (desc) desc.textContent = treino.descricao;
         if (card) {
           card.onclick = () => {
-            window.location.href = `treino.html?id=${id}&nome=${treino.nomeurl}`;
+            window.location.href = `/treino?id=${id}&nome=${treino.nomeurl}`;
           };
         }
       });
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => { /* DOMContentLoaded --> es
   const treinoId = parseInt(params.get("id"));
   if (!treinoId) return;
 
-  fetch("assets/js/treinos.json")
+  fetch("assets/js/data/treinos.json")
     .then(res => res.json())
     .then(data => {
       const treino = data.treinos.find(t => t.id === treinoId);

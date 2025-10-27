@@ -4,18 +4,30 @@ const app = express()
 const port = 3000
 
 const index = require('./middleware/back')
+const login = require('./middleware/loginUser')
 const registrarRoute = require('./middleware/registrarUser')
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 app.use('/api/info', index);
-app.use('/api/treinos', treinos);
+app.use('/api/login', login);
 app.use('/api/registrar', registrarRoute);
+app.use('/api/catalogo', catalogo);
+app.use('/api/sobrenos', sobrenos);
+app.use('/api/planos', planos);
 
 /* Informações (pegar) */
 app.get('/', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.get('/planos', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'planos.html'));
+});
+
+app.get('/sobrenos', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'sobrenos.html'));
 });
 
 app.get('/novousuario', (req, res)=>{
@@ -25,7 +37,14 @@ app.get('/novousuario', (req, res)=>{
 app.get('/treinos', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treinos.html'));
 });
-/* Mandar informação */
+
+app.get('/treino', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'treino.html'))
+})
+
+app.get('/catalogo', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'catalogo.html'))
+})
 
 
 

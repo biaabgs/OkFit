@@ -7,5 +7,14 @@
     "passwd": "Soap",
     "plano": "hibrido",
     "datanasc": "2008-01-01"
+  },
+  {
+    "userID": "1761503635611",
+    "nome": "Larissa Otomo Klarosk",
+    "email": "sissaklarosk@gmail.com",
+    "telefone": "5511963694967",
+    "passwd": "1234578!",
+    "plano": "presencial",
+    "datanasc": "2008-12-09"
   }
 ]

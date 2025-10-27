@@ -1,0 +1,238 @@
+{
+  "treinos": [
+    {
+      "id": 1,
+      "titulo": "Glúteos",
+      "nomeurl": "gluteos",
+      "descricao": "Treino completo para desenvolvimento dos glúteos",
+      "imagem": "assets/img/treinos/peitotriceps.png",
+      "exercicios": [
+        {
+          "nome": "Agachamento Livre",
+          "descricao": "4 séries de 8-12 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha a core firme"
+        },
+        {
+          "nome": "Levantamento Terra Romeno",
+          "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha as costas retas"
+        },
+        {
+          "nome": "Elevação Pelvica",
+          "descricao": "3-4 séries de 8-10 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha as costas retas"
+        },
+        {
+          "nome": "Cadeira Abdutora",
+          "descricao": "3 séries de 15-20 repetições<br>Descanso: 60 segundos",
+          "dica": "Evite empurrar com impulso; controle o movimento"
+        },
+        {
+          "nome": "Avanço com Halteres",
+          "descricao": "3 séries de 10-12 repetições por perna<br>Descanso: 60-90 segundos",
+          "dica": "Mantenha o tronco ereto e o joelho alinhado ao tornozelo"
+        },
+        {
+          "nome": "Glúteo na Corda",
+          "descricao": "3 séries de 15 repetições por perna<br>Descanso: 60 segundos",
+          "dica": "Evite arquear a lombar; foque na contração do glúteo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Peito e Tríceps",
+      "nomeurl": "peito-triceps",
+      "descricao": "Treino focado em peitoral e tríceps",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Supino Reto",
+          "descricao": "4 séries de 10-12 repetições<br>Descanso: 90 segundos",
+          "dica": "Mantenha os pés firmes no chão"
+        },
+        {
+          "nome": "Supino Inclinado com Halteres",
+          "descricao": "3 séries de 10-12 repetições<br>Descanso: 90 segundos",
+          "dica": "Mantenha os pés firmes no chão e lombar levemente arqueada"
+        },
+        {
+          "nome": "Crossover no cabo",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 60 segundos",
+          "dica": "Concentre-se na contração do peitoral ao cruzar os braços"
+        },
+        {
+          "nome": "Tríceps corda no pulley",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 90 segundos",
+          "dica": "Abra bem os braços no final do movimento"
+        },
+        {
+          "nome": "Tríceps testa",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 90 segundos",
+          "dica": "Mantenha os cotovelos fixos e não deixe os halteres/barra descer demais."
+        },
+        {
+          "nome": "Mergulho entre bancos",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 60 segundos",
+          "dica": "Mantenha os ombros longe das orelhas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Costas e Bíceps",
+      "nomeurl": "costas-biceps",
+      "descricao": "Treino para desenvolvimento das costas e bíceps",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Puxada Frontal na Barra",
+          "descricao": "4 séries de 10-12 repetições<br>Descanso: 90-120 segundos",
+          "dica": "Prepare a região lombar"
+        },
+        {
+          "nome": "Remada Curvada com Barra",
+          "descricao": "4 séries até a falha<br>Descanso: 90-120 segundos",
+          "dica": "Use auxílio se necessário"
+        },
+        {
+          "nome": "Remada Unilateral com Halteres",
+          "descricao": "3 séries de 10-12 repetições<br>Descanso: 60 segundos",
+          "dica": "Mantenha o tronco firme e o cotovelo próximo ao corpo"
+        },
+        {
+          "nome": "Rosca Direta",
+          "descricao": "3 séries de 10-12 repetições<br>Descanso: 60 segundos",
+          "dica": "Evite balançar o corpo"
+        },
+        {
+          "nome": "Rosca Alternada com Halteres",
+          "descricao": "3 séries de 10-12 repetições<br>Descanso: 60 segundos",
+          "dica": "Evite balançar o corpo"
+        },
+        {
+          "nome": "Rosca Martelo",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 60 segundos",
+          "dica": "Mantenha os punhos neutros e os cotovelos fixos"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Posterior e Panturrilhas",
+      "nomeurl": "posterior-panturrilhas",
+      "descricao": "Treino focado em posteriores de coxa e panturrilhas",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Mesa Flexora",
+          "descricao": "4 séries de 12-15 repetições<br>Descanso: 60-90 segundos",
+          "dica": "Ajuste o banco para alinhar o joelho com o eixo da máquina"
+        },
+        {
+          "nome": "Stiff com Halteres",
+          "descricao": "3-4 séries de 10-12 repetições<br>Descanso: 90 segundos",
+          "dica": "Mantenha a coluna reta e sinta o alongamento nos posteriores"
+        },
+        {
+          "nome": "Agachamento Sumô",
+          "descricao": "3 séries de 12-15 repetições<br>Descanso: 60 segundos",
+          "dica": "Pés afastados e pontas voltadas para fora, contraia os glúteos no topo"
+        },
+        {
+          "nome": "Panturrilha em Pé",
+          "descricao": "4 séries de 20 repetições<br>Descanso: 45-60 segundos",
+          "dica": "Suba o máximo possível e desça devagar"
+        },
+        {
+          "nome": "Panturrilha Sentado",
+          "descricao": "3 séries de 20 repetições<br>Descanso: 45-60 segundos",
+          "dica": "Mantenha o movimento controlado e sem impulso"
+        },
+        {
+          "nome": "Subida no Step com Peso",
+          "descricao": "3 séries de 12 repetições por perna<br>Descanso: 60 segundos",
+          "dica": "Use halteres e mantenha o tronco ereto"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Ombros e Trapézio",
+      "nomeurl": "ombros-trapezio",
+      "descricao": "Treino para fortalecimento dos ombros e trapézio",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Desenvolvimento com Halteres",
+          "descricao": "4 séries de 10-12 repetições<br>Descanso: 90 segundos",
+          "dica": "Não deixe os cotovelos descerem abaixo da linha dos ombros"
+        },
+        {
+          "nome": "Elevação Lateral",
+          "descricao": "3 séries de 15 repetições<br>Descanso: 60 segundos",
+          "dica": "Evite impulso e mantenha o tronco firme"
+        },
+        {
+          "nome": "Elevação Frontal",
+          "descricao": "3 séries de 12 repetições<br>Descanso: 60 segundos",
+          "dica": "Levante os halteres até a altura dos ombros"
+        },
+        {
+          "nome": "Remada Alta com Barra",
+          "descricao": "3 séries de 12 repetições<br>Descanso: 60 segundos",
+          "dica": "Mantenha os cotovelos acima dos punhos"
+        },
+        {
+          "nome": "Encolhimento de Ombros",
+          "descricao": "3 séries de 20 repetições<br>Descanso: 45 segundos",
+          "dica": "Contraia o trapézio no topo do movimento"
+        },
+        {
+          "nome": "Face Pull no Cabo",
+          "descricao": "3 séries de 15 repetições<br>Descanso: 60 segundos",
+          "dica": "Puxe na direção dos olhos e contraia os ombros"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Core e Funcional",
+      "nomeurl": "core-funcional",
+      "descricao": "Treino para fortalecimento do core e condicionamento geral",
+      "imagem": "assets/img/home/academia/academiascs.png",
+      "exercicios": [
+        {
+          "nome": "Prancha Isométrica",
+          "descricao": "3 séries de 30-60 segundos<br>Descanso: 30 segundos",
+          "dica": "Mantenha o corpo alinhado e o abdômen contraído"
+        },
+        {
+          "nome": "Abdominal Infra no Banco",
+          "descricao": "3 séries de 15 repetições<br>Descanso: 30 segundos",
+          "dica": "Evite balançar as pernas e mantenha o controle"
+        },
+        {
+          "nome": "Abdominal Oblíquo com Halter",
+          "descricao": "3 séries de 15 repetições por lado<br>Descanso: 30 segundos",
+          "dica": "Gire o tronco, não apenas os braços"
+        },
+        {
+          "nome": "Elevação de Pernas",
+          "descricao": "3 séries de 12 repetições<br>Descanso: 30 segundos",
+          "dica": "Mantenha a lombar colada no banco"
+        },
+        {
+          "nome": "Russian Twist",
+          "descricao": "3 séries de 20 repetições (10 por lado)<br>Descanso: 30 segundos",
+          "dica": "Incline o tronco e mantenha o abdômen firme"
+        },
+        {
+          "nome": "Burpee",
+          "descricao": "3 séries de 10 repetições<br>Descanso: 60 segundos",
+          "dica": "Execute com ritmo constante e boa postura"
+        }
+      ]
+    }
+  ]
+}
