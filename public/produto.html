@@ -46,7 +46,7 @@
   <!--FIM HEADER-->
 
     <!-- MAIN CONTENT -->
-  <main>
+  <!-- <main>
     <div class="hero">
       <div class="row">
         <div class="col">
@@ -65,14 +65,10 @@
 
         <div class="col">
           <div class="content">
-            <p class="brand">OKFit Nutrition</p>
+            <p  id="ex-nome-1"class="brand">OKFit Nutrition</p>
             <h2>Whey Protein Concentrado</h2>
             <div class="rating">
               <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half"></i>
             </div>
             <p class="price">R$ 129,90</p>
             <p><strong>Sabor:</strong>
@@ -92,6 +88,134 @@
               Adicionar ao Carrinho
             </button>
           </div>
+        </div>
+      </div> -->
+
+      <!-- RELATED PRODUCTS -->
+      <!-- <div class="related">
+        <h2>Produtos Relacionados</h2>
+        <div class="row">
+          <div class="item-card">
+            <img src="assets/img/suplementos/whey_vermelho.png" alt="Creatina">
+            <div class="details">
+              <p>Creatina Monohidratada 300g</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="price-tag">R$ 89,90</p>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/img/suplementos/whey_vermelho.png" alt="BCAA">
+            <div class="details">
+              <p>BCAA 2:1:1 - 120 Cápsulas</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <p class="price-tag">R$ 69,90</p>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/img/suplementos/whey_vermelho.png" alt="Pré-Treino">
+            <div class="details">
+              <p>Pré-Treino Turbo 300g</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p class="price-tag">R$ 99,90</p>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <img src="assets/img/suplementos/whey_vermelho.png" alt="Glutamina">
+            <div class="details">
+              <p>Glutamina Pura 300g</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <p class="price-tag">R$ 79,90</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> -->
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="hero">
+      <div class="row">
+        <div class="col">
+          <div class="slider">
+            <div class="product">
+              <img class="produto-imagem" src="assets/img/suplementos/whey_vermelho.png" alt="Produto" onclick="clickme(this)">
+              <img class="produto-imagem" src="assets/img/suplementos/whey_vermelho.png" alt="Produto" onclick="clickme(this)">
+              <img class="produto-imagem" src="assets/img/suplementos/whey_vermelho.png" alt="Produto" onclick="clickme(this)">
+              <img class="produto-imagem" src="assets/img/suplementos/whey_vermelho.png" alt="Produto" onclick="clickme(this)">
+            </div>
+            <div class="preview">
+              <img class="produto-imagem" src="assets/img/suplementos/whey_vermelho.png" id="imagebox" alt="Produto">
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="content">
+            <p class="brand"><span id="produto-marca">OKFit Nutrition</span></p>
+            <h2 class="main-titulo"><!-- Whey Protein Concentrado --></h2>
+            <p class="produto-descricao">Carregando descrição...</p>
+            
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            
+            <p class="price">R$ <span id="produto-preco"></span></p>
+            
+            <!-- Detalhes do Produto -->
+            <div class="produto-detalhes">
+              <p><strong>Tipo:</strong> <span id="produto-tipo">-</span></p>
+              <p><strong>Peso:</strong> <span id="produto-peso">-</span></p>
+              <p><strong>Porção:</strong> <span id="produto-porcao">-</span></p>
+              <p id="proteina-info" style="display:none;"><strong>Proteína por porção:</strong> <span id="produto-proteina">-</span></p>
+              <p id="creatina-info" style="display:none;"><strong>Creatina por porção:</strong> <span id="produto-creatina">-</span></p>
+            </div>
+
+            <p><strong>Sabor:</strong>
+              <select name="flavor" id="produto-sabores-select">
+                <option value="">Selecione o sabor</option>
+              </select>
+            </p>
+            
+            <p><strong>Quantidade:</strong>
+              <input type="number" value="1" min="1" max="10">
+            </p>
+            
+            <button type="button">
+              <i class="fa fa-shopping-cart"></i>
+              Adicionar ao Carrinho
+            </button>
         </div>
       </div>
 
@@ -188,6 +312,7 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/produto.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>

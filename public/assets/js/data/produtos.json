@@ -6,7 +6,7 @@
       "titulo": "Whey Protein Concentrado",
       "nomeurl": "whey-protein-concentrado",
       "descricao": "Proteína em pó para recuperação e ganho muscular; ideal pós-treino.",
-      "imagem": "assets/img/produtos/whey_concentrado.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Marca Exemplo",
         "tipo": "Whey Protein Concentrado",
@@ -24,7 +24,7 @@
       "titulo": "Whey Protein Isolado",
       "nomeurl": "whey-protein-isolado",
       "descricao": "Proteína isolada de rápida absorção, baixo teor de carboidrato e lactose.",
-      "imagem": "assets/img/produtos/whey_isolado.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Marca Premium",
         "tipo": "Whey Protein Isolado",
@@ -42,7 +42,7 @@
       "titulo": "Protein Blend (Whey + Caseína)",
       "nomeurl": "protein-blend",
       "descricao": "Mistura de proteínas de rápida e lenta absorção para recuperação prolongada.",
-      "imagem": "assets/img/produtos/protein_blend.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Marca Blend",
         "tipo": "Blend Proteico",
@@ -60,7 +60,7 @@
       "titulo": "Creatina Monohidratada",
       "nomeurl": "creatina-monohidratada",
       "descricao": "Suplemento para aumento de força, potência e recuperação em exercícios curtos e intensos.",
-      "imagem": "assets/img/produtos/creatina.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Creatina Pura",
         "tipo": "Creatina Monohidratada Micronizada",
@@ -78,7 +78,7 @@
       "titulo": "Creatina + Beta-Alanina (Combo)",
       "nomeurl": "creatina-beta-alanina",
       "descricao": "Combinação para força e resistência em esforços repetidos de alta intensidade.",
-      "imagem": "assets/img/produtos/creatina_beta.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Performance Line",
         "tipo": "Combo Creatina e Beta-Alanina",
@@ -94,7 +94,43 @@
       "titulo": "Protein Vegan (Proteína Vegetal)",
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
-      "imagem": "assets/img/produtos/protein_vegan.png",
+      "imagem": "assets/img/suplementos/whey_azul.png",
+      "detalhes": {
+        "marca": "Vegan Fit",
+        "tipo": "Proteína Vegetal (Ervilha + Arroz)",
+        "peso": "1kg",
+        "porcao": "30g",
+        "proteina_por_porco": "22g",
+        "sabores_disponiveis": ["Chocolate", "Baunilha"],
+        "preco_sugerido": "R$ 169.90"
+      },
+      "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
+      "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."
+    },
+    {
+      "id": 7,
+      "titulo": "Protein Vegan (Proteína Vegetal)",
+      "nomeurl": "protein-vegan",
+      "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
+      "imagem": "assets/img/suplementos/whey_azul.png",
+      "detalhes": {
+        "marca": "Vegan Fit",
+        "tipo": "Proteína Vegetal (Ervilha + Arroz)",
+        "peso": "1kg",
+        "porcao": "30g",
+        "proteina_por_porco": "22g",
+        "sabores_disponiveis": ["Chocolate", "Baunilha"],
+        "preco_sugerido": "R$ 169.90"
+      },
+      "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
+      "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."
+    },
+    {
+      "id": 8,
+      "titulo": "Protein Vegan (Proteína Vegetal)",
+      "nomeurl": "protein-vegan",
+      "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
+      "imagem": "assets/img/suplementos/whey_azul.png",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
