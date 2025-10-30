@@ -1,4 +1,3 @@
-
 {
   "produtos": [
     {
@@ -7,14 +6,19 @@
       "nomeurl": "whey-protein-concentrado",
       "descricao": "Proteína em pó para recuperação e ganho muscular; ideal pós-treino.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$149,90",
       "detalhes": {
         "marca": "Marca Exemplo",
         "tipo": "Whey Protein Concentrado",
         "peso": "1kg",
         "porcao": "30g",
         "proteina_por_porco": "24g",
-        "sabores_disponiveis": ["Baunilha", "Chocolate", "Morango"],
-        "preco_sugerido": "R$ 149.90"
+        "sabores_disponiveis": [
+          "Baunilha",
+          "Chocolate",
+          "Morango"
+        ],
+        "preco_sugerido": "R$149,90"
       },
       "uso": "Misturar 1 scoop em 200-300ml de água ou leite desnatado; consumir após o treino.",
       "dica": "Para melhor digestão, evite consumir com refeições muito ricas em gordura."
@@ -25,14 +29,18 @@
       "nomeurl": "whey-protein-isolado",
       "descricao": "Proteína isolada de rápida absorção, baixo teor de carboidrato e lactose.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$249,90",
       "detalhes": {
         "marca": "Marca Premium",
         "tipo": "Whey Protein Isolado",
         "peso": "900g",
         "porcao": "30g",
         "proteina_por_porco": "27g",
-        "sabores_disponiveis": ["Chocolate", "Baunilha"],
-        "preco_sugerido": "R$ 249.90"
+        "sabores_disponiveis": [
+          "Chocolate",
+          "Baunilha"
+        ],
+        "preco_sugerido": "R$249,90"
       },
       "uso": "Misturar 1 scoop em água fria; indicado pós-treino e entre refeições.",
       "dica": "Ótimo para quem tem sensibilidade à lactose; combine com carboidrato em treinos longos."
@@ -43,14 +51,18 @@
       "nomeurl": "protein-blend",
       "descricao": "Mistura de proteínas de rápida e lenta absorção para recuperação prolongada.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$179,90",
       "detalhes": {
         "marca": "Marca Blend",
         "tipo": "Blend Proteico",
         "peso": "1kg",
         "porcao": "35g",
         "proteina_por_porco": "30g",
-        "sabores_disponiveis": ["Cookies", "Caramelo"],
-        "preco_sugerido": "R$ 179.90"
+        "sabores_disponiveis": [
+          "Cookies",
+          "Caramelo"
+        ],
+        "preco_sugerido": "R$179,90"
       },
       "uso": "Consumir antes de dormir ou como lanche; misturar em água ou leite.",
       "dica": "Excelente para manter aporte proteico durante a noite e reduzir catabolismo."
@@ -61,14 +73,17 @@
       "nomeurl": "creatina-monohidratada",
       "descricao": "Suplemento para aumento de força, potência e recuperação em exercícios curtos e intensos.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$59,90",
       "detalhes": {
         "marca": "Creatina Pura",
         "tipo": "Creatina Monohidratada Micronizada",
         "peso": "300g",
         "porcao": "3g",
         "creatina_por_porco": "3g",
-        "sabores_disponiveis": ["Neutra"],
-        "preco_sugerido": "R$ 59.90"
+        "sabores_disponiveis": [
+          "Neutra"
+        ],
+        "preco_sugerido": "R$59,90"
       },
       "uso": "Tomar 3g por dia; pode ser realizada fase de saturação opcional 20g/dia por 5-7 dias.",
       "dica": "Misture em água ou suco; tomar com carboidrato pode melhorar a absorção."
@@ -79,6 +94,7 @@
       "nomeurl": "creatina-beta-alanina",
       "descricao": "Combinação para força e resistência em esforços repetidos de alta intensidade.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$129,90",
       "detalhes": {
         "marca": "Performance Line",
         "tipo": "Combo Creatina e Beta-Alanina",
@@ -95,14 +111,18 @@
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$169,90",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
         "peso": "1kg",
         "porcao": "30g",
         "proteina_por_porco": "22g",
-        "sabores_disponiveis": ["Chocolate", "Baunilha"],
-        "preco_sugerido": "R$ 169.90"
+        "sabores_disponiveis": [
+          "Chocolate",
+          "Baunilha"
+        ],
+        "preco_sugerido": "R$169,90"
       },
       "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
       "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."
@@ -113,14 +133,18 @@
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$169,90",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
         "peso": "1kg",
         "porcao": "30g",
         "proteina_por_porco": "22g",
-        "sabores_disponiveis": ["Chocolate", "Baunilha"],
-        "preco_sugerido": "R$ 169.90"
+        "sabores_disponiveis": [
+          "Chocolate",
+          "Baunilha"
+        ],
+        "preco_sugerido": "R$169,90"
       },
       "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
       "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."
@@ -131,14 +155,18 @@
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
       "imagem": "assets/img/suplementos/whey_azul.png",
+      "preco": "R$169,90",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
         "peso": "1kg",
         "porcao": "30g",
         "proteina_por_porco": "22g",
-        "sabores_disponiveis": ["Chocolate", "Baunilha"],
-        "preco_sugerido": "R$ 169.90"
+        "sabores_disponiveis": [
+          "Chocolate",
+          "Baunilha"
+        ],
+        "preco_sugerido": "R$169,90"
       },
       "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
       "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."

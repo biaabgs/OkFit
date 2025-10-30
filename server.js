@@ -37,6 +37,14 @@ app.get('/treinos', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treinos.html'));
 });
 
+app.get('/online', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'online.html'))
+})
+
+app.get('/onlinetreino', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'treino_online.html'))
+})
+
 app.get('/treino', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treino.html'))
 })

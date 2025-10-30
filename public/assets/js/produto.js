@@ -13,12 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const titulo = document.getElementById(`titulo-${id}`);
         const desc = document.getElementById(`desc-${id}`);
         const card = document.getElementById(`card-${id}`);
+        const preco = document.getElementById(`preco-${id}`);
 
         // Preenche os dados do card
         if (img) img.src = produto.imagem;
         if (titulo) titulo.textContent = produto.titulo;
         if (desc) desc.textContent = produto.descricao;
-        
+        if (preco) preco.textContent = produto.preco;
+
         // Adiciona evento de clique para navegar até a página de detalhes
         if (card) {
           card.onclick = () => {
@@ -37,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Pega os parâmetros da URL (?id=1&nome=whey-protein-concentrado)
   const params = new URLSearchParams(window.location.search);
   const produtoId = parseInt(params.get("id"));
-  
+
   // Se não houver ID na URL, não faz nada (não está na página de detalhes)
   if (!produtoId) return;
 
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       // Encontra o produto específico pelo ID
       const produto = data.produtos.find(p => p.id === produtoId);
-      
+
       // Se não encontrar o produto, não faz nada
       if (!produto) {
         console.error("Produto não encontrado!");
@@ -68,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const descElement = document.querySelector(".produto-descricao");
       if (descElement) descElement.textContent = produto.descricao;
 
+      // Atualiza detalhes do produto (se existirem no HTML)
       // Atualiza detalhes do produto (se existirem no HTML)
       const detalhes = produto.detalhes;
       if (detalhes) {
@@ -95,11 +98,20 @@ document.addEventListener("DOMContentLoaded", () => {
           if (creatinaEl) creatinaEl.textContent = detalhes.creatina_por_porco;
         }
 
-        // Lista de sabores disponíveis
-        if (detalhes.sabores_disponiveis) {
-          const saboresEl = document.getElementById("produto-sabores");
-          if (saboresEl) {
-            saboresEl.textContent = detalhes.sabores_disponiveis.join(", ");
+        // Preenche o select de sabores disponíveis
+        if (detalhes.sabores_disponiveis && detalhes.sabores_disponiveis.length > 0) {
+          const selectSabores = document.getElementById("produto-sabores-select");
+          if (selectSabores) {
+            // Limpa as opções existentes (exceto a primeira)
+            selectSabores.innerHTML = '<option value="">Selecione o sabor</option>';
+
+            // Adiciona cada sabor como uma opção no select
+            detalhes.sabores_disponiveis.forEach(sabor => {
+              const option = document.createElement("option");
+              option.value = sabor.toLowerCase().replace(/\s+/g, '-');
+              option.textContent = sabor;
+              selectSabores.appendChild(option);
+            });
           }
         }
       }

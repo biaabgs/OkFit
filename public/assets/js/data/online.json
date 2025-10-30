@@ -1,0 +1,88 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "titulo": "Treino Full Body para Iniciantes",
+      "totalAulas": 5,
+      "nomeurl": "full-body-iniciantes",
+      "aulas": [
+        {
+          "nome": "Aquecimento e Alongamento",
+          "descricao": "Aprenda técnicas essenciais de aquecimento para prevenir lesões e melhorar seu desempenho nos treinos."
+        },
+        {
+          "nome": "Treino de Membros Superiores",
+          "descricao": "Exercícios fundamentais para peito, costas, ombros e braços com foco em postura e execução correta."
+        },
+        {
+          "nome": "Treino de Membros Inferiores",
+          "descricao": "Fortaleça pernas e glúteos com agachamentos, avanços e exercícios de resistência progressiva."
+        },
+        {
+          "nome": "Core e Abdômen",
+          "descricao": "Desenvolva estabilidade e força no core com exercícios práticos e eficientes."
+        },
+        {
+          "nome": "Treino Completo Final",
+          "descricao": "Integre todos os movimentos aprendidos em uma sessão full body de 30 minutos."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "HIIT Avançado - Queima de Gordura",
+      "totalAulas": 6,
+      "nomeurl": "hiit-avancado",
+      "aulas": [
+        {
+          "nome": "Fundamentos do HIIT",
+          "descricao": "Entenda os princípios do treino intervalado de alta intensidade e seus benefícios para emagrecimento."
+        },
+        {
+          "nome": "HIIT Cardio Intenso",
+          "descricao": "Sessão de 20 minutos combinando burpees, mountain climbers e jumping jacks."
+        },
+        {
+          "nome": "HIIT com Peso Corporal",
+          "descricao": "Maximize a queima calórica usando apenas o peso do seu corpo em exercícios explosivos."
+        },
+        {
+          "nome": "Tabata Extremo",
+          "descricao": "Protocolo Tabata de 4 minutos com exercícios de alta intensidade e descansos curtos."
+        },
+        {
+          "nome": "HIIT Metabólico",
+          "descricao": "Treino focado em acelerar o metabolismo e manter a queima de calorias pós-treino."
+        },
+        {
+          "nome": "Desafio Final 30 Minutos",
+          "descricao": "Teste completo combinando todos os protocolos HIIT aprendidos no curso."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Yoga para Flexibilidade",
+      "totalAulas": 4,
+      "nomeurl": "yoga-flexibilidade",
+      "aulas": [
+        {
+          "nome": "Introdução ao Yoga",
+          "descricao": "Fundamentos, respiração e posturas básicas para começar sua jornada no yoga."
+        },
+        {
+          "nome": "Sequência Saudação ao Sol",
+          "descricao": "Domine a sequência clássica que trabalha todo o corpo e melhora a flexibilidade."
+        },
+        {
+          "nome": "Alongamento Profundo",
+          "descricao": "Posturas avançadas focadas em ganho de flexibilidade e liberação de tensões."
+        },
+        {
+          "nome": "Yoga Flow Completo",
+          "descricao": "Fluxo contínuo de 45 minutos integrando força, equilíbrio e flexibilidade."
+        }
+      ]
+    }
+  ]
+}

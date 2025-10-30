@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="online" lang="pt-br">
+<html class="treino_online" lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
@@ -38,46 +38,57 @@
         </div>
     </div>
 
-    <section class="treino_online">
+    <!-- ONLINE ESPECÍFICO -->
+    <main>
+        
+            <div class="container">
+                <div class="row">
+                    <!-- Coluna do Vídeo -->
+                    <div class="col-lg-8 col-12">
+                        <div class="video-section">
+                            <h1>Excel Avançado - Aula Demonstrativa</h1>
+                            <div class="video-container">
+                                <iframe id="lessonVideo"
+                                src="https://www.youtube.com/embed/U6tzlAShVA0?si=eDUOUPlfyam4hGPN"
+                                title="Excel Avançado - Aula Demonstrativa" 
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe> 
+                            </div>
 
-        <div class="container online-container">
-            <div class="video-section">
-                <h1>???</h1>
-                <div class="video-container">
-                    <iframe id="lessonVideo" width="100%" height="500"
-                        src="https://www.youtube.com/embed/U6tzlAShVA0?si=eDUOUPlfyam4hGPN"
-                        title="Excel Avançado - Aula Demonstrativa" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+                            <div class="online-actions">
+                                <button class="btn btn-primary" id="completeBtn">Marcar como Concluído</button>
+                                <button class="btn btn-secondary" id="nextBtn"></button>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="online-actions">
-                    <button class="btn btn-primary" id="completeBtn">Marcar como Concluído</button>
-                    <button class="btn btn-secondary" id="nextBtn">Próxima Aula</button>
+                    <!-- Coluna do Progresso -->
+                    <div class="col-lg-4 col-12">
+                        <div class="online-progress">
+                            <h2>Seu Progresso</h2>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <p id="progressText">0% Completo</p>
+
+                            <h3>Conteúdo do Curso</h3>
+                            <ul class="lesson-list" id="lessonList">
+                                <li class="lesson-item active" data-lesson="1" data-video="U6tzlAShVA0">Importância do
+                                    BI</li>
+                                <li class="lesson-item" data-lesson="2" data-video="U6tzlAShVA0">Multidimensão</li>
+                                <li class="lesson-item" data-lesson="3" data-video="U6tzlAShVA0">Dimensão de Negócio
+                                </li>
+                                <li class="lesson-item" data-lesson="4" data-video="U6tzlAShVA0">Dimensão Fato</li>
+                                <li class="lesson-item" data-lesson="5" data-video="U6tzlAShVA0">Hierarquia para BI</li>
+                                <li class="lesson-item" data-lesson="6" data-video="U6tzlAShVA0">Indicadores</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="online-progress">
-                <h2>Seu Progresso</h2>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-                <p id="progressText">0% Completo</p>
-
-                <h3>Conteúdo do Curso</h3>
-                <ul class="lesson-list" id="lessonList">
-                    <li class="lesson-item" data-lesson="1">Importância do Bi</li>
-                    <li class="lesson-item" data-lesson="2">Multidimensão</li>
-                    <li class="lesson-item" data-lesson="3">Dimensão de Negócio</li>
-                    <li class="lesson-item" data-lesson="4">Dimensão Fato</li>
-                    <li class="lesson-item" data-lesson="5">Hierarquia para BI</li>
-                    <li class="lesson-item" data-lesson="6">Indicadores</li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
+    </main>
     <script src="assets/js/online.js"></script>
     <script src="assets/js/script.js"></script>
 
