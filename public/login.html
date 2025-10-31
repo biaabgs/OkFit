@@ -34,8 +34,9 @@
       <nav id="sidebar">
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="/login">Área do aluno</a></li>
           <li><a href="/sobrenos">Sobre Nós</a></li>
-          <li><a href="./treino1.html">Contato</a></li>
+          <li><a href="/catalogo">Catalogo</a></li>
         </ul>
       </nav>
     </div>
@@ -61,7 +62,7 @@
           <div class="mb-3">
             <a class="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal">Não tem uma conta?</a>
             <a class="enter-btn" onclick="fazerLogin()">
-              <button type="submit" class="btn btn-primary" onclick="fazerLogin()">Entrar</button>
+              <button type="submit" class="btn" onclick="fazerLogin()">Entrar</button>
           </div>
         </div>
       </div>
@@ -136,7 +137,7 @@
 
           <div class="modal-footer justify-content-between">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <button type="button" class="login-block-enter btn btn-warning"
+            <button type="button" class="login-block-enter btn"
               onclick="registrarNovoUsuario()">Registrar</button>
           </div>
         </div>
@@ -173,9 +174,6 @@
         </div>
       </div>
     </div>
-
-
-
 
     <script async src="assets/js/login.js"></script>
     <script src="assets/js/script.js"></script>

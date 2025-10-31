@@ -48,7 +48,7 @@ p {
   background-color: var(--laranja);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 1.5vh 2.5vh;
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -92,7 +92,6 @@ p {
   position: fixed;
   top: 0;
   right: -250px;
-  /* Escondido inicialmente à direita */
   width: 250px;
   height: 100%;
   background-color: var(--azul-escuro);
@@ -1189,7 +1188,7 @@ section.unidades {
   .login-box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 5vh;
     align-items: center;
     background: rgba(255, 255, 255, 0.05);
@@ -1198,7 +1197,7 @@ section.unidades {
     border-radius: 10px;
     padding: 15px;
     max-width: 750px;
-    height: 58vh;
+    height: 75vh;
     width: auto;
     margin: 100px auto;
     box-shadow: 2px 0px 14px -7px rgba(0, 0, 0, 0.2);
@@ -1238,15 +1237,11 @@ section.unidades {
     cursor: pointer;
   }
 
-  .btn {
-    justify-content: center;
-  }
-
   .modal-content {
     .btn {
       margin-bottom: 2vh;
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1rem;
       display: flex;
       justify-content: center
     }
@@ -1280,6 +1275,11 @@ section.banner_catalogo {
 
   .btn {
     margin-bottom: 2vh;
+    font-size: 2vh;
+  }
+
+  .btn i {
+    font-size: 2vh;
   }
 
   .card {
@@ -1361,7 +1361,7 @@ section.banner_catalogo {
 
   .btn-delete {
     background-color: transparent;
-    color: var(--laranja-escu
+    color: var(--laranja-escuro);
     transition: color 0.3s;
   }
 
@@ -2119,7 +2119,10 @@ section.banner_catalogo {
 
 .treino_online {
   body {
-    background-color: white;
+    background: #ff5100;
+    background: radial-gradient(circle,
+        rgba(255, 81, 0, 1) 0%,
+        rgba(254, 127, 45, 1) 100%);
   }
 
   section.treino_online {

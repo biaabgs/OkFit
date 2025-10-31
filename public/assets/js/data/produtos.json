@@ -5,7 +5,7 @@
       "titulo": "Whey Protein Concentrado",
       "nomeurl": "whey-protein-concentrado",
       "descricao": "Proteína em pó para recuperação e ganho muscular; ideal pós-treino.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/whey_baunilha.png",
       "preco": "R$149,90",
       "detalhes": {
         "marca": "Marca Exemplo",
@@ -16,6 +16,9 @@
         "sabores_disponiveis": [
           "Baunilha",
           "Chocolate",
+          "Laranja",
+          "Limão",
+          "Uva",
           "Morango"
         ],
         "preco_sugerido": "R$149,90"
@@ -28,7 +31,7 @@
       "titulo": "Whey Protein Isolado",
       "nomeurl": "whey-protein-isolado",
       "descricao": "Proteína isolada de rápida absorção, baixo teor de carboidrato e lactose.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/whey_chocolate.png",
       "preco": "R$249,90",
       "detalhes": {
         "marca": "Marca Premium",
@@ -72,7 +75,7 @@
       "titulo": "Creatina Monohidratada",
       "nomeurl": "creatina-monohidratada",
       "descricao": "Suplemento para aumento de força, potência e recuperação em exercícios curtos e intensos.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$59,90",
       "detalhes": {
         "marca": "Creatina Pura",
@@ -92,7 +95,7 @@
       "id": 5,
       "titulo": "Creatina + Beta-Alanina (Combo)",
       "nomeurl": "creatina-beta-alanina",
-      "descricao": "Combinação para força e resistência em esforços repetidos de alta intensidade.",
+      "descricao": "Creatina monohidratada para aumentar a força, resistência e energia nos treinos. Essencial para máximo desempenho.",
       "imagem": "assets/img/suplementos/whey_azul.png",
       "preco": "R$129,90",
       "detalhes": {
@@ -100,16 +103,16 @@
         "tipo": "Combo Creatina e Beta-Alanina",
         "peso": "300g + 200g",
         "porcao": "3g creatina + 2g beta-alanina",
-        "preco_sugerido": "R$ 129.90"
+        "preco_sugerido": "R$ 129,90"
       },
       "uso": "Tomar conforme indicação: 1 porção ao dia; beta-alanina pode causar formigamento transitório.",
       "dica": "Beta-alanina melhora resistência em séries longas; combine com creatina para sinergia."
     },
     {
       "id": 6,
-      "titulo": "Protein Vegan (Proteína Vegetal)",
-      "nomeurl": "protein-vegan",
-      "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
+      "titulo": "OKFIT Protein Bar",
+      "nomeurl": "protein-bar",
+      "descricao": "Snack proteico delicioso para energia e saciedade. Perfeito para o lanche rápido e nutritivo em qualquer hora do dia.",
       "imagem": "assets/img/suplementos/whey_azul.png",
       "preco": "R$169,90",
       "detalhes": {
@@ -122,7 +125,7 @@
           "Chocolate",
           "Baunilha"
         ],
-        "preco_sugerido": "R$169,90"
+        "preco_sugerido": "R$99,90"
       },
       "uso": "Misturar 1 scoop em água ou bebida vegetal; usar pós-treino ou entre refeições.",
       "dica": "Combine com uma fonte de leucina ou BCAA se objetivo principal for hipertrofia."
