@@ -1361,11 +1361,7 @@ section.banner_catalogo {
 
   .btn-delete {
     background-color: transparent;
-    color: var(--laranja-escuro);
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0;
+    color: var(--laranja-escu
     transition: color 0.3s;
   }
 
