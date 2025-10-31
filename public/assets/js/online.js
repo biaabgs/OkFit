@@ -1,96 +1,27 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const lessonList = document.getElementById('lessonList');
-//     const completeBtn = document.getElementById('completeBtn');
-//     const nextBtn = document.getElementById('nextBtn');
-//     const progressFill = document.getElementById('progressFill');
-//     const progressText = document.getElementById('progressText');
-//     const lessonVideo = document.getElementById('lessonVideo');
+// Seu JavaScript aqui
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("assets/js/data/online.json")
+    .then(res => res.json())
+    .then(data => {
+      data.cursos.forEach(curso => {
+        const id = curso.id;
 
-//     let currentLesson = 1;
-//     const totalLessons = 6;
-//     let completedLessons = 0;
+        const titulo = document.getElementById(`titulo-${id}`);
+        const totalAulas = document.getElementById(`totalAulas-${id}`);
+        const card = document.getElementById(`card-${id}`);
 
-//     const videoIds = {
-//         1: "U6tzlAShVA0?si=xw2HSofsrJe19mGA",
-//         2: "nlO2tSWpVaQ?si=NRJGYxBlsBJ5pq_W",
-//         3: "V6XeILhMIWY?si=TJOj2dcaid_Tb2rE	",
-//         4: "RlXAM8417Y8?si=tPz28C0qInbDGyan",
-//         5: "5PmiSjXUx6k?si=IUUENAFa8UwOYcyF",
-//         6: "wM7Ja43QJuE?si=o8w9LrrrmOWvySKb",
-//     };
+        if (titulo) titulo.textContent = curso.titulo;
+        if (totalAulas) totalAulas.textContent = curso.totalAulas;
+        if (card) {
+          card.onclick = () => {
+            window.location.href = `/treino_online.html?id=${id}&nome=${curso.nomeurl}`;
+          };
+        }
+      });
+    })
+    .catch(error => console.error("Erro ao carregar online.json:", error));
+});
 
-//     function updateVideo(lessonNumber) {
-//         const videoId = videoIds[lessonNumber];
-//         lessonVideo.src = `https://www.youtube.com/embed/${videoId}?si=7LMJePcWnqAcLo8Q`;
-//     }
-
-
-//     function updateProgress() {
-//         const progress = (completedLessons / totalLessons) * 100;
-//         progressFill.style.width = `${progress}%`;
-//         progressText.textContent = `${Math.round(progress)}% Completo`;
-//     }
-
-//     function updateLessonStates() {
-//         const lessons = lessonList.getElementsByClassName('lesson-item');
-//         Array.from(lessons).forEach((lesson, index) => {
-//             const lessonNum = index + 1;
-//             lesson.classList.remove('completed', 'active');
-
-//             if (lessonNum < currentLesson) {
-//                 lesson.classList.add('completed');
-//             } else if (lessonNum === currentLesson) {
-//                 lesson.classList.add('active');
-//             }
-//         });
-
-
-//         completeBtn.disabled = false;
-//         nextBtn.disabled = currentLesson >= totalLessons;
-//     }
-
-
-//     completeBtn.addEventListener('click', function () {
-//         const currentLessonElement = document.querySelector(`[data-lesson="${currentLesson}"]`);
-//         if (!currentLessonElement.classList.contains('completed')) {
-//             currentLessonElement.classList.add('completed');
-//             completedLessons++;
-//             updateProgress();
-//         }
-//         if (currentLesson < totalLessons) {
-//             currentLesson++;
-//             updateLessonStates();
-//             updateVideo(currentLesson);
-//         }
-//     });
-
-
-//     nextBtn.addEventListener('click', function () {
-//         if (currentLesson < totalLessons) {
-//             currentLesson++;
-//             updateLessonStates();
-//             updateVideo(currentLesson);
-//         }
-//     });
-
-
-//     lessonList.addEventListener('click', function (e) {
-//         const lessonItem = e.target.closest('.lesson-item');
-//         if (lessonItem) {
-//             const lessonNum = parseInt(lessonItem.dataset.lesson);
-//             if (lessonNum <= currentLesson) {
-//                 currentLesson = lessonNum;
-//                 updateLessonStates();
-//                 updateVideo(currentLesson);
-//             }
-//         }
-//     });
-
-
-//     updateProgress();
-//     updateLessonStates();
-//     updateVideo(currentLesson);
-// });
 document.addEventListener('DOMContentLoaded', function () {
     // DOM Elements
     const lessonList = document.getElementById('lessonList');
@@ -102,26 +33,90 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // State
     let currentLesson = 1;
-    const totalLessons = 6;
-    let completedLessons = new Set(); // Track completed lessons with a Set
+    let totalLessons = 0;
+    let completedLessons = new Set();
+    let videoIds = {}; // ← Será preenchido dinamicamente
+    let cursoAtual = null;
 
-    // Video IDs (cleaned up - removed extra tabs/spaces)
-    const videoIds = {
-        1: "U6tzlAShVA0?si=xw2HSofsrJe19mGA",
-        2: "nlO2tSWpVaQ?si=NRJGYxBlsBJ5pq_W",
-        3: "V6XeILhMIWY?si=TJOj2dcaid_Tb2rE",
-        4: "RlXAM8417Y8?si=tPz28C0qInbDGyan",
-        5: "5PmiSjXUx6k?si=IUUENAFa8UwOYcyF",
-        6: "wM7Ja43QJuE?si=o8w9LrrrmOWvySKb",
-    };
+    // Pega o ID do curso da URL
+    const params = new URLSearchParams(window.location.search);
+    const onlineId = parseInt(params.get("id"));
+
+    if (!onlineId) {
+        console.error("ID do curso não encontrado");
+        return;
+    }
+
+    // CARREGA OS DADOS DO JSON
+    fetch("assets/js/data/online.json")
+        .then(res => res.json())
+        .then(data => {
+            cursoAtual = data.cursos.find(c => c.id === onlineId);
+            
+            if (!cursoAtual) {
+                console.error("Curso não encontrado");
+                return;
+            }
+
+            // Define totais
+            totalLessons = cursoAtual.aulas.length;
+
+            // PREENCHE O OBJETO videoIds COM OS DADOS DO JSON
+            cursoAtual.aulas.forEach((aula, index) => {
+                videoIds[index + 1] = aula.videoId;
+            });
+
+            // Atualiza o título da página
+            const tituloElement = document.querySelector(".main-titulo");
+            if (tituloElement) {
+                tituloElement.textContent = cursoAtual.titulo;
+            }
+
+            // Popula a lista de aulas
+            popularListaAulas();
+
+            // Inicializa
+            updateProgress();
+            updateLessonStates();
+            updateVideo(currentLesson);
+        })
+        .catch(error => console.error("Erro ao carregar curso:", error));
+
+    // Popula a lista de aulas no sidebar
+    function popularListaAulas() {
+        if (!lessonList || !cursoAtual) return;
+
+        lessonList.innerHTML = ''; // Limpa a lista
+
+        cursoAtual.aulas.forEach((aula, index) => {
+            const lessonNum = index + 1;
+            const li = document.createElement('li');
+            li.className = 'lesson-item';
+            li.dataset.lesson = lessonNum;
+            li.innerHTML = `
+                <span class="lesson-number">${lessonNum}</span>
+                <span class="lesson-title">${aula.nome}</span>
+            `;
+            lessonList.appendChild(li);
+        });
+    }
 
     // Update video iframe
-    function updateVideo(lessonNumber) {
-        const videoId = videoIds[lessonNumber];
-        if (videoId) {
-            lessonVideo.src = `https://www.youtube.com/embed/${videoId}`;
-        }
+function updateVideo(lessonNumber) {
+    const videoId = videoIds[lessonNumber];
+    if (videoId) {
+        // Limpa o videoId (remove parâmetros extras)
+        const cleanVideoId = videoId.split('?')[0].split('&')[0];
+        
+        // Monta a URL do embed
+        lessonVideo.src = `https://www.youtube.com/embed/${cleanVideoId}`;
+        
+        console.log('Carregando vídeo:', cleanVideoId);
+    } else {
+        console.error("Vídeo não encontrado para a aula:", lessonNumber);
+        lessonVideo.src = ''; // Limpa o iframe
     }
+}
 
     // Update progress bar
     function updateProgress() {
@@ -138,18 +133,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const lessonNum = index + 1;
             lesson.classList.remove('completed', 'active');
 
-            // Mark completed lessons
             if (completedLessons.has(lessonNum)) {
                 lesson.classList.add('completed');
             }
             
-            // Mark current active lesson
             if (lessonNum === currentLesson) {
                 lesson.classList.add('active');
             }
         });
 
-        // Update button states
         const isCurrentCompleted = completedLessons.has(currentLesson);
         completeBtn.disabled = isCurrentCompleted;
         completeBtn.textContent = isCurrentCompleted ? 'Concluída' : 'Marcar como Concluída';
@@ -163,7 +155,6 @@ document.addEventListener('DOMContentLoaded', function () {
             updateProgress();
             updateLessonStates();
             
-            // Auto-advance to next lesson if available
             if (currentLesson < totalLessons) {
                 setTimeout(() => {
                     currentLesson++;
@@ -189,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (lessonItem) {
             const lessonNum = parseInt(lessonItem.dataset.lesson, 10);
             
-            // Allow navigation to any lesson (not just up to current)
             if (lessonNum >= 1 && lessonNum <= totalLessons) {
                 currentLesson = lessonNum;
                 updateLessonStates();
@@ -197,11 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
-    // Initialize
-    updateProgress();
-    updateLessonStates();
-    updateVideo(currentLesson);
 });
 
 //pegar as informações
@@ -234,10 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.getElementById(`card-${id}`);
 
         if (titulo) titulo.textContent = treino.titulo;
-        if (totalAulas) totalAulas.textContent = online.totalAulas;
+        if (totalAulas) totalAulas.textContent = treino.totalAulas;
         if (card) {
           card.onclick = () => {
-            window.location.href = `/treino_online.html?id=${id}&nome=${online.nomeurl}`;
+            window.location.href = `/treino_online.html?id=${id}&nome=${treino.nomeurl}`;
           };
         }
       });

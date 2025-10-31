@@ -105,20 +105,36 @@ function fazerLogin() {
 			if (data.ok) {
 				//pega o ID do user e usa de referencia, e dps abre os treinos
 				const userID = data.usuarioLogin.userID;
+				const plano = data.usuarioLogin.plano;
 
 				localStorage.setItem('userID', userID);
+				localStorage.setItem('userID', plano);
 
-				if (plano === "hibrido"){
-					window.location.href = '/'
-				}
-				if (plano === "online"){
-					window.location.href = '/'
-				}
-				if (plano === "presencial"){
-					window.location.href = '/'
+				// if (plano === "hibrido"){
+				// 	window.location.href = 'public/hibrido.html'
+				// }
+				// if (plano === "online"){
+				// 	window.location.href = 'public/online.html'
+				// }
+				// if (plano === "presencial"){
+				// 	window.location.href = 'public/treinos.html'
+				// }
+				const routes = {
+					'hibrido': '/hibrido',
+					'online': '/online',
+					'presencial': '/treinos'
+				};
+
+				const redirectUrl = routes[plano];
+
+				if(redirectUrl){
+					alert('Usuario logado!');
+					window.location.href = redirectUrl;
+				}else {
+					alert('Erro Desconhecido');
 				}
 				
-				alert('Usuario logado!');
+				
 
 			}
 

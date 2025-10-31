@@ -7,24 +7,34 @@
       "nomeurl": "full-body-iniciantes",
       "aulas": [
         {
+          "id": 1,
           "nome": "Aquecimento e Alongamento",
-          "descricao": "Aprenda técnicas essenciais de aquecimento para prevenir lesões e melhorar seu desempenho nos treinos."
+          "descricao": "Aprenda técnicas essenciais de aquecimento para prevenir lesões e melhorar seu desempenho nos treinos.",
+          "videoId": "3P8S7c9PT-g"
         },
         {
+          "id": 2,
           "nome": "Treino de Membros Superiores",
-          "descricao": "Exercícios fundamentais para peito, costas, ombros e braços com foco em postura e execução correta."
+          "descricao": "Exercícios fundamentais para peito, costas, ombros e braços com foco em postura e execução correta.",
+          "videoId": "j7ToFyrgVVI"
         },
         {
+          "id": 3,
           "nome": "Treino de Membros Inferiores",
-          "descricao": "Fortaleça pernas e glúteos com agachamentos, avanços e exercícios de resistência progressiva."
+          "descricao": "Fortaleça pernas e glúteos com agachamentos, avanços e exercícios de resistência progressiva.",
+          "videoId": "UItWltVZZmE"
         },
         {
+          "id": 4,
           "nome": "Core e Abdômen",
-          "descricao": "Desenvolva estabilidade e força no core com exercícios práticos e eficientes."
+          "descricao": "Desenvolva estabilidade e força no core com exercícios práticos e eficientes.",
+          "videoId": "GSWUdVJdGhI"
         },
         {
+          "id": 5,
           "nome": "Treino Completo Final",
-          "descricao": "Integre todos os movimentos aprendidos em uma sessão full body de 30 minutos."
+          "descricao": "Integre todos os movimentos aprendidos em uma sessão full body de 30 minutos.",
+          "videoId": "UVEhyFdAWJQ"
         }
       ]
     },
@@ -35,28 +45,40 @@
       "nomeurl": "hiit-avancado",
       "aulas": [
         {
+          "id": 1,
           "nome": "Fundamentos do HIIT",
-          "descricao": "Entenda os princípios do treino intervalado de alta intensidade e seus benefícios para emagrecimento."
+          "descricao": "Entenda os princípios do treino intervalado de alta intensidade e seus benefícios para emagrecimento.",
+          "videoId": "R0kT30RbN-k"
         },
         {
+          "id": 2,
           "nome": "HIIT Cardio Intenso",
-          "descricao": "Sessão de 20 minutos combinando burpees, mountain climbers e jumping jacks."
+          "descricao": "Sessão de 20 minutos combinando burpees, mountain climbers e jumping jacks.",
+          "videoId": "07jQ_9me0WA"
         },
         {
+          "id": 3,
           "nome": "HIIT com Peso Corporal",
-          "descricao": "Maximize a queima calórica usando apenas o peso do seu corpo em exercícios explosivos."
+          "descricao": "Maximize a queima calórica usando apenas o peso do seu corpo em exercícios explosivos.",
+          "videoId": "VCiwegeJBnE"
         },
         {
+          "id": 4,
           "nome": "Tabata Extremo",
-          "descricao": "Protocolo Tabata de 4 minutos com exercícios de alta intensidade e descansos curtos."
+          "descricao": "Protocolo Tabata de 4 minutos com exercícios de alta intensidade e descansos curtos.",
+          "videoId": "qT3zyUbcAKA"
         },
         {
+          "id": 5,
           "nome": "HIIT Metabólico",
-          "descricao": "Treino focado em acelerar o metabolismo e manter a queima de calorias pós-treino."
+          "descricao": "Treino focado em acelerar o metabolismo e manter a queima de calorias pós-treino.",
+          "videoId": "F7YQISKVAqs"
         },
         {
+          "id": 6,
           "nome": "Desafio Final 30 Minutos",
-          "descricao": "Teste completo combinando todos os protocolos HIIT aprendidos no curso."
+          "descricao": "Teste completo combinando todos os protocolos HIIT aprendidos no curso.",
+          "videoId": "C__HnSErsAg"
         }
       ]
     },
@@ -67,20 +89,28 @@
       "nomeurl": "yoga-flexibilidade",
       "aulas": [
         {
+          "id": 1,
           "nome": "Introdução ao Yoga",
-          "descricao": "Fundamentos, respiração e posturas básicas para começar sua jornada no yoga."
+          "descricao": "Fundamentos, respiração e posturas básicas para começar sua jornada no yoga.",
+          "videoId": "ymlCL9SbEbQ"
         },
         {
+          "id": 2,
           "nome": "Sequência Saudação ao Sol",
-          "descricao": "Domine a sequência clássica que trabalha todo o corpo e melhora a flexibilidade."
+          "descricao": "Domine a sequência clássica que trabalha todo o corpo e melhora a flexibilidade.",
+          "videoId": "OXT2LWFz4uY"
         },
         {
+          "id": 3,
           "nome": "Alongamento Profundo",
-          "descricao": "Posturas avançadas focadas em ganho de flexibilidade e liberação de tensões."
+          "descricao": "Posturas avançadas focadas em ganho de flexibilidade e liberação de tensões.",
+          "videoId": "TVxhMZOIJ4k"
         },
         {
+          "id": 4,
           "nome": "Yoga Flow Completo",
-          "descricao": "Fluxo contínuo de 45 minutos integrando força, equilíbrio e flexibilidade."
+          "descricao": "Fluxo contínuo de 45 minutos integrando força, equilíbrio e flexibilidade.",
+          "videoId": "TqOil7mw9lE"
         }
       ]
     }

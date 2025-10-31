@@ -49,6 +49,10 @@ app.get('/treino', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treino.html'))
 })
 
+app.get('/hibrido', (req, res)=>{
+	res.status(200).sendFile(path.join(__dirname, 'public', 'hibrido.html'))
+})
+
 app.get('/catalogo', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'catalogo.html'))
 })

@@ -7,6 +7,7 @@
       "descricao": "Proteína em pó para recuperação e ganho muscular; ideal pós-treino.",
       "imagem": "assets/img/suplementos/whey_baunilha.png",
       "preco": "R$149,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Marca Exemplo",
         "tipo": "Whey Protein Concentrado",
@@ -33,6 +34,7 @@
       "descricao": "Proteína isolada de rápida absorção, baixo teor de carboidrato e lactose.",
       "imagem": "assets/img/suplementos/whey_chocolate.png",
       "preco": "R$249,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Marca Premium",
         "tipo": "Whey Protein Isolado",
@@ -53,8 +55,9 @@
       "titulo": "Protein Blend (Whey + Caseína)",
       "nomeurl": "protein-blend",
       "descricao": "Mistura de proteínas de rápida e lenta absorção para recuperação prolongada.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/whey_baunilha.png",
       "preco": "R$179,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Marca Blend",
         "tipo": "Blend Proteico",
@@ -77,6 +80,7 @@
       "descricao": "Suplemento para aumento de força, potência e recuperação em exercícios curtos e intensos.",
       "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$59,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Creatina Pura",
         "tipo": "Creatina Monohidratada Micronizada",
@@ -96,8 +100,9 @@
       "titulo": "Creatina + Beta-Alanina (Combo)",
       "nomeurl": "creatina-beta-alanina",
       "descricao": "Creatina monohidratada para aumentar a força, resistência e energia nos treinos. Essencial para máximo desempenho.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$129,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Performance Line",
         "tipo": "Combo Creatina e Beta-Alanina",
@@ -113,8 +118,10 @@
       "titulo": "OKFIT Protein Bar",
       "nomeurl": "protein-bar",
       "descricao": "Snack proteico delicioso para energia e saciedade. Perfeito para o lanche rápido e nutritivo em qualquer hora do dia.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/barrinha/barrinha_azul.png",
       "preco": "R$169,90",
+      "pontos": "90",
+      "tipo": "barrinha",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
@@ -135,8 +142,9 @@
       "titulo": "Protein Vegan (Proteína Vegetal)",
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$169,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
@@ -157,8 +165,9 @@
       "titulo": "Protein Vegan (Proteína Vegetal)",
       "nomeurl": "protein-vegan",
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
-      "imagem": "assets/img/suplementos/whey_azul.png",
+      "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$169,90",
+      "pontos": "90",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",

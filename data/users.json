@@ -14,7 +14,7 @@
     "email": "sissaklarosk@gmail.com",
     "telefone": "5511963694967",
     "passwd": "12345678!",
-    "plano": "presencial",
+    "plano": "hibrido",
     "datanasc": "2008-12-09"
   },
   {
@@ -23,7 +23,7 @@
     "email": "goncalvesdasilvabia@gmail.com",
     "telefone": "11987654321",
     "passwd": "@Aluno06",
-    "plano": "presencial",
+    "plano": "online",
     "datanasc": "2000-01-06"
   }
 ]
