@@ -801,7 +801,7 @@ button.traco:hover::after {
   letter-spacing: 3px;
   background-color: transparent;
   padding: 10px;
-  /* opacity: 0; */
+  opacity: 0;
   transition: opacity 0.5s;
 }
 
@@ -1364,6 +1364,7 @@ section.banner_catalogo {
     background-color: transparent;
     color: var(--laranja-escuro);
     transition: color 0.3s;
+    border: none;
   }
 
   .btn-delete:hover {
@@ -1674,7 +1675,7 @@ section.banner_catalogo {
 }
 
 .online {
-  section.treinos{
+  section.treinos {
     margin: 9vh 0vh;
   }
 
@@ -1683,7 +1684,7 @@ section.banner_catalogo {
     margin-bottom: 10px;
   }
 
-  .page-header p {  
+  .page-header p {
     font-size: 1.6rem;
     opacity: 0.9;
   }
@@ -1711,16 +1712,16 @@ section.banner_catalogo {
     overflow: hidden;
   }
 
-    .treino-header::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-      animation: pulse 3s ease-in-out infinite;
-    }
+  .treino-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+  }
 
   @keyframes pulse {
 
@@ -2044,8 +2045,218 @@ section.banner_catalogo {
       padding: 10px 12px;
     }
   }
+}
 
+.hibrido {
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+  }
 
+  .page-header h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .page-header p {
+    font-size: 1.6rem;
+    opacity: 0.9;
+    color: var(--azul-escuro);
+  }
+
+  /* Cards Híbridos */
+  .hibrido-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hibrido-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-header-hibrido {
+    background: linear-gradient(135deg, var(--laranja), var(--laranja-escuro));
+    color: white;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-header-hibrido.presencial {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--azul-escuroo));
+  }
+
+  .card-header-hibrido::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  .card-title-hibrido {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .card-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-body-hibrido {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: var(--laranja-claro);
+    border-radius: 10px;
+  }
+
+  .info-item {
+    text-align: center;
+  }
+
+  .info-item i {
+    color: var(--laranja-escuro);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .info-label {
+    font-size: 0.9rem;
+    color: var(--cinza-escuro);
+    display: block;
+  }
+
+  .info-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--azul-escuro);
+  }
+
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    flex-grow: 1;
+  }
+
+  .features-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: var(--azul-escuroo);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+
+  .features-list li:last-child {
+    border-bottom: none;
+  }
+
+  .features-list i {
+    color: var(--azul-escuro);
+  }
+
+  .btn-iniciar {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--laranja-escuro), var(--laranja));
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+  }
+
+  .btn-iniciar:hover {
+    background: linear-gradient(135deg, var(--laranja-escuro), var(--laranja-escuro));
+    transform: scale(1.02);
+    color: white;
+  }
+
+  .btn-iniciar i {
+    margin-right: 10px;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--azul-escuro);
+    margin-top: 60px;
+  }
+
+  footer img {
+    max-height: 110px;
+    width: auto;
+    padding: 1vh;
+  }
+
+  .logofooter {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 4rem;
+    }
+
+    .info-section {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card-title-hibrido {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 /*FOOTER*/
