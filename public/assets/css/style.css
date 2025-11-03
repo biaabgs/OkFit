@@ -1,3 +1,5 @@
+/*GERAL*/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -126,7 +128,7 @@ p {
   color: var(--azul-escuro);
 }
 
-/*Sec 1*/
+/*Sec 1 INDEX*/
 .sec1 {
   padding: 2vh;
   padding-top: 4vh;
@@ -136,7 +138,7 @@ p {
   align-items: center;
 }
 
-/* ATIVIDADES */
+/* ATIVIDADES INDEX */
 section.atividades {
   background-color: var(--laranja);
 
@@ -229,7 +231,7 @@ section {
   margin-top: 10px;
 }
 
-/* PRATICIDADE */
+/* PRATICIDADE INDEX*/
 section.praticidade {
   margin: 10vh;
 
@@ -264,11 +266,11 @@ section.praticidade {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    
+    padding-top: 5vh;
 
     img {
-      max-width: 400px;
+      max-width: 600px;
       height: auto;
       border-radius: 8px;
       transition: transform 0.5s ease;
@@ -284,7 +286,6 @@ section.praticidade {
     aspect-ratio: 1 / 1;
     width: 40vw;
     max-width: 350px;
-    /* background-color: aqua; */
     display: flex;
     border-radius: 8px;
     margin-right: 10px;
@@ -334,7 +335,7 @@ section.praticidade {
   }
 }
 
-/* RECOMPENSAS */
+/* RECOMPENSAS INDEX */
 .container.recompensas {
   background: #ff5100;
   background: radial-gradient(circle,
@@ -435,7 +436,7 @@ button.traco:hover::after {
   --item5-opacity: 0;
 }
 
-/* carousel */
+/* carousel INDEX */
 .carousel {
   position: relative;
   height: 580px;
@@ -637,7 +638,7 @@ button.traco:hover::after {
   }
 }
 
-/* previous */
+/* ANTERIOR */
 .carousel.prev .list .item:nth-child(5) {
   animation: transformFromPosition4 0.5s ease-in-out 1 forwards;
 }
@@ -662,13 +663,13 @@ button.traco:hover::after {
   }
 }
 
-/* detail  */
+/* DETALHES  */
 .carousel .list .item .detail {
   opacity: 0;
   pointer-events: none;
 }
 
-/* showDetail */
+/* MOSTRAR DETALHES INDEX */
 .carousel.showDetail .list .item:nth-child(3),
 .carousel.showDetail .list .item:nth-child(4) {
   left: 100%;
@@ -922,7 +923,7 @@ button.traco:hover::after {
   font-weight: bold;
 }
 
-/* PLANOS */
+/* PLANOS INDEX*/
 
 section.planos {
 
@@ -1054,7 +1055,7 @@ section.planos {
 }
 
 
-/*NOSSAS UNIDADES*/
+/*NOSSAS UNIDADES INDEX*/
 section.unidades {
   padding: 2vh;
   padding-top: 4vh;
@@ -1253,7 +1254,7 @@ section.unidades {
   }
 }
 
-/* BANNER */
+/* BANNER CATALOGO*/
 section.banner_catalogo {
   display: flex;
 }
@@ -1284,7 +1285,6 @@ section.banner_catalogo {
   }
 
   .card {
-    /* min-height: 38vh; */
     max-width: 30vh;
     position: relative;
     flex-direction: column;
@@ -1306,7 +1306,7 @@ section.banner_catalogo {
   }
 }
 
-/* TREINO */
+/* TREINO PRESENCIAL*/
 .treino {
   .container {
     margin-top: 5vh;
@@ -1328,7 +1328,6 @@ section.banner_catalogo {
 
   .task-card:hover {
     transform: translateY(-5px);
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); */
   }
 
   .task-card.completed {
@@ -1454,24 +1453,13 @@ section.banner_catalogo {
       line-height: 1.6;
       margin-bottom: 20px;
     }
-
-    /* @media (max-width: 600px) {
-      .card-treino {
-        flex-direction: column;
-      }
-
-      .col-sm-5 {
-        flex: 0 0 auto;
-        min-height: 180px;
-      }
-    } */
   }
 
 
 }
 
 
-
+/*PRODUTOS*/
 .produto {
   .hero {
     width: 100%;
@@ -1674,6 +1662,8 @@ section.banner_catalogo {
   }
 }
 
+
+/*TREINOS ONLINE*/
 .online {
   section.treinos {
     margin: 9vh 0vh;
@@ -1784,19 +1774,16 @@ section.banner_catalogo {
   .info-value {
     font-size: 1.4rem;
     font-weight: bold;
-    /* color: var(--secondary-color); */
   }
 
   .btn-start-treino {
     width: 100%;
     padding: 15px;
     background: linear-gradient(135deg, var(--laranja-escuro), var(--laranja));
-    /* border: none; */
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 10px;
-    /* transition: all 0.3s ease; */
   }
 
   .btn-start-treino:hover {
@@ -2047,6 +2034,7 @@ section.banner_catalogo {
   }
 }
 
+/*PAGINA DE TREINOS HIBRIDOS*/
 .hibrido {
   .page-header {
     text-align: center;
@@ -2225,7 +2213,7 @@ section.banner_catalogo {
     margin-right: 10px;
   }
 
-  /* Footer */
+  /* FOOTER */
   footer {
     background-color: var(--azul-escuro);
     margin-top: 60px;

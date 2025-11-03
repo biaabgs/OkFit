@@ -1,15 +1,17 @@
-// Seu JavaScript aqui
+
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/js/data/online.json")
-    .then(res => res.json())
+  fetch("assets/js/data/online.json")//busca o arquivo treinos.json
+    .then(res => res.json())//transforma em json
     .then(data => {
       data.cursos.forEach(curso => {
         const id = curso.id;
 
+        //busca pelos ids
         const titulo = document.getElementById(`titulo-${id}`);
         const totalAulas = document.getElementById(`totalAulas-${id}`);
         const card = document.getElementById(`card-${id}`);
 
+        //se exitir, ele preenche no JSON
         if (titulo) titulo.textContent = curso.titulo;
         if (totalAulas) totalAulas.textContent = curso.totalAulas;
         if (card) {

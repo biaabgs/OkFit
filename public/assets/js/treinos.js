@@ -14,18 +14,21 @@ function deleteTask(button) {
   setTimeout(() => colDiv.remove(), 300);
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/js/data/treinos.json")
-    .then(res => res.json())
+  fetch("assets/js/data/treinos.json")//busca o arquivo treinos.json
+    .then(res => res.json())//transforma em json
     .then(data => {
       data.treinos.forEach(treino => {
         const id = treino.id;
 
+        //busca pelos ids
         const img = document.getElementById(`img-${id}`);
         const titulo = document.getElementById(`titulo-${id}`);
         const desc = document.getElementById(`desc-${id}`);
         const card = document.getElementById(`card-${id}`);
 
+        //se exitir, ele preenche no JSON
         if (img) img.src = treino.imagem;
         if (titulo) titulo.textContent = treino.titulo;
         if (desc) desc.textContent = treino.descricao;

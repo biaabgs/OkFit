@@ -110,15 +110,7 @@ function fazerLogin() {
 				localStorage.setItem('userID', userID);
 				localStorage.setItem('userID', plano);
 
-				// if (plano === "hibrido"){
-				// 	window.location.href = 'public/hibrido.html'
-				// }
-				// if (plano === "online"){
-				// 	window.location.href = 'public/online.html'
-				// }
-				// if (plano === "presencial"){
-				// 	window.location.href = 'public/treinos.html'
-				// }
+				//redireciona conforme o plano
 				const routes = {
 					'hibrido': '/hibrido',
 					'online': '/online',

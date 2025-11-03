@@ -1,7 +1,7 @@
-// Seu JavaScript aqui
+
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/js/data/online.json")
-    .then(res => res.json())
+  fetch("assets/js/data/online.json")//BUSCA O ARQUIVO JSON
+    .then(res => res.json())//CONVERTE O ARQUIVO EM JSON
     .then(data => {
       data.cursos.forEach(curso => {
         const id = curso.id;
