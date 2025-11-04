@@ -23,7 +23,16 @@
     "email": "goncalvesdasilvabia@gmail.com",
     "telefone": "11987654321",
     "passwd": "@Aluno06",
-    "plano": "online",
+    "plano": "presencial",
     "datanasc": "2000-01-06"
+  },
+  {
+    "userID": "1762282055244",
+    "nome": "Castro Henrique ",
+    "email": "castro@gmail.com",
+    "telefone": "11994705544",
+    "passwd": "12345678*",
+    "plano": "hibrido",
+    "datanasc": "2007-04-24"
   }
 ]

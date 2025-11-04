@@ -41,13 +41,13 @@ app.get('/online', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'online.html'))
 })
 
-/* app.get('/onlinetreino', (req, res)=>{
+app.get('/onlinetreino', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treino_online.html'))
 })
 
 app.get('/treino', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'treino.html'))
-}) */
+})
 
 app.get('/hibrido', (req, res)=>{
 	res.status(200).sendFile(path.join(__dirname, 'public', 'hibrido.html'))
