@@ -22,6 +22,12 @@ main {
   min-height: 80vh;
 }
 
+.index h1 strong {
+  display: block;              /* força quebra de linha */
+  margin-top: 2vh;             /* espaçamento superior */
+  margin-bottom: 3vh;          /* espaçamento inferior opcional */
+}
+
 /* Elementos comuns */
 h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -199,64 +205,37 @@ section.atividades .row {
   font-size: 2rem;
 }
 
-/* .paralelograma {
-  position: relative;
-  overflow: hidden;
-  transform: skew(20deg);
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4 / 3;
-  margin: 0 auto;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.27) skew(-20deg);
-    border-radius: 8px;
-  }
-} */
 
 /* Container principal */
 .paralelograma {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 100%;            /* deixa o container escalar livremente */
-  max-inline-size: 400px;     /* limite visual em navegadores compatíveis */
+  max-width: 100%;
   aspect-ratio: 4 / 3;
   margin: 0 auto;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
   border-radius: 8px;
-  background: #000; /* fallback enquanto a imagem carrega */
-
-  /* controle fluido da inclinação usando clamp para evitar skew extremo em telas pequenas */
-  transform: skewX(clamp(8deg, 6vw, 20deg));
-  transform-origin: center;
+  background: #000;
+  transform: none; /* sem inclinação */
 }
 
-/* Imagem posicionada para compensar o skew do container */
+/* Imagem sem distorção */
 .paralelograma img {
   position: absolute;
-  inset: 0; /* top: 0; right: 0; bottom: 0; left: 0; */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* escala e skew inverso controlados de forma fluida */
-  transform: translateZ(0) scale(clamp(1.05, 1.2 + 0.8vw, 1.4)) skewX(calc(-1 * clamp(8deg, 6vw, 20deg)));
+  transform: none; /* sem skew nem scale */
   transform-origin: center;
   display: block;
   backface-visibility: hidden;
-  will-change: transform;
+  will-change: auto;
   pointer-events: none;
 }
 
-/* Garantir que o recorte arredondado sempre funcione em navegadores que aplicam radius à imagem */
+/* Recorte arredondado */
 .paralelograma::before {
   content: "";
   position: absolute;
@@ -273,7 +252,7 @@ section.atividades .row {
     border-radius: 6px;
   }
   .paralelograma img {
-    transform: translateZ(0) scale(1.08) skewX(-10deg);
+    transform: none; /* sem distorção */
   }
 }
 
@@ -285,13 +264,17 @@ section.atividades .row {
     box-shadow: 0 6px 30px rgba(0,0,0,0.22);
   }
   .paralelograma img {
-    transform: translateZ(0) scale(1.35) skewX(-20deg);
+    transform: none; /* sem distorção */
   }
 }
 
-/* Inverte a inclinação em ambientes RTL */
-:dir(rtl) .paralelograma { transform: skewX(calc(-1 * clamp(8deg, 6vw, 20deg))); }
-:dir(rtl) .paralelograma img { transform: translateZ(0) scale(clamp(1.05, 1.2 + 0.8vw, 1.4)) skewX(calc(1 * clamp(8deg, 6vw, 20deg))); }
+/* Ambientes RTL — sem inversão de inclinação */
+:dir(rtl) .paralelograma {
+  transform: none;
+}
+:dir(rtl) .paralelograma img {
+  transform: none;
+}
 
 /* Respeita usuário que prefere reduzir movimento */
 @media (prefers-reduced-motion: reduce) {
@@ -302,6 +285,7 @@ section.atividades .row {
     transform: none;
   }
 }
+
 
 
 .row.align-items-center {
@@ -2202,6 +2186,10 @@ section.banner_catalogo {
 
 /*PAGINA DE TREINOS HIBRIDOS*/
 .hibrido {
+  section.treinos {
+    margin-bottom: 5vh;
+  }
+
   .page-header {
     text-align: center;
     padding: 60px 20px 40px;

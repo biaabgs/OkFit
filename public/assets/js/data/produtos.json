@@ -34,7 +34,7 @@
       "descricao": "Proteína isolada de rápida absorção, baixo teor de carboidrato e lactose.",
       "imagem": "assets/img/suplementos/whey_chocolate.png",
       "preco": "R$249,90",
-      "pontos": "90",
+      "pontos": "180",
       "detalhes": {
         "marca": "Marca Premium",
         "tipo": "Whey Protein Isolado",
@@ -57,7 +57,7 @@
       "descricao": "Mistura de proteínas de rápida e lenta absorção para recuperação prolongada.",
       "imagem": "assets/img/suplementos/whey_baunilha.png",
       "preco": "R$179,90",
-      "pontos": "90",
+      "pontos": "120",
       "detalhes": {
         "marca": "Marca Blend",
         "tipo": "Blend Proteico",
@@ -80,7 +80,7 @@
       "descricao": "Suplemento para aumento de força, potência e recuperação em exercícios curtos e intensos.",
       "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$59,90",
-      "pontos": "90",
+      "pontos": "80",
       "detalhes": {
         "marca": "Creatina Pura",
         "tipo": "Creatina Monohidratada Micronizada",
@@ -102,7 +102,7 @@
       "descricao": "Creatina monohidratada para aumentar a força, resistência e energia nos treinos. Essencial para máximo desempenho.",
       "imagem": "assets/img/suplementos/creatina.png",
       "preco": "R$129,90",
-      "pontos": "90",
+      "pontos": "110",
       "detalhes": {
         "marca": "Performance Line",
         "tipo": "Combo Creatina e Beta-Alanina",
@@ -120,7 +120,7 @@
       "descricao": "Snack proteico delicioso para energia e saciedade. Perfeito para o lanche rápido e nutritivo em qualquer hora do dia.",
       "imagem": "assets/img/barrinha/barrinha_azul.png",
       "preco": "R$169,90",
-      "pontos": "90",
+      "pontos": "130",
       "tipo": "barrinha",
       "detalhes": {
         "marca": "Vegan Fit",
@@ -144,7 +144,7 @@
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
       "imagem": "assets/img/suplementos/whey_uva.png",
       "preco": "R$169,90",
-      "pontos": "90",
+      "pontos": "150",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
@@ -167,7 +167,7 @@
       "descricao": "Proteína à base de plantas para veganos e intolerantes à lactose.",
       "imagem": "assets/img/suplementos/whey_chocolate.png",
       "preco": "R$169,90",
-      "pontos": "90",
+      "pontos": "160",
       "detalhes": {
         "marca": "Vegan Fit",
         "tipo": "Proteína Vegetal (Ervilha + Arroz)",
